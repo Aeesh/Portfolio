@@ -22,7 +22,6 @@ section{
 }
 h2{
     text-transform: uppercase;
-
 }
 ul li{
     padding: .3em 0;
@@ -36,14 +35,25 @@ ul li{
     margin-left: 5em;
     padding: 1em;
     list-style-type: none;
-    /*background: #9c27b0;*/
 }
 #navbar ul li a{
     text-decoration: none;
-   /* color: #fe3a22;*/
     color: #fe3a22;
     text-transform: uppercase;
 }
+
+@media(max-width:800px){
+    #navbar ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 .1em;
+    }
+    #navbar ul li a{
+        padding: .2em;
+        font-size: .9em;
+    }  
+}
+
 .welcome{
     background: url('bg-02.jpg');
     width: 100%;
@@ -63,28 +73,54 @@ ul li{
     color: #fff;
     background: #030303;/*#333000*/
 }
+
 .about h2{
     color: #fe3a22;
 }
+
 .about > p{
     background: #fff;
     width: 100%;
-    height: 20em;
+    height: fit-content;
     margin: 0 5em;
-    padding: 5em;
+    padding:  5em;
     color:#fe3a22;
     text-align: center;
     border: 1px solid #fe3a22;
     border-radius: 5em;
 }
+
+@media(max-width:800px){
+  
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .about > p{
+        width: auto;
+        height: auto;
+        margin: 1em 0 ;
+        padding: 5em 1em;   
+    }
+}
+
 img{
     width: 15em;
     height: 15em;
     border-radius: 50%;
 }
+
 #contact{
     background: #fda172;
+    color: #fdf5e6;   
 }
+
+#contact h2{
+    text-transform: none;
+    text-align: center;
+}
+
 .contact-form{
 	margin: auto;
 	padding: 1em;
@@ -93,22 +129,33 @@ img{
     border-radius: 3em;	
     box-shadow: #000 10px 5px 15px;
 }
+
 .contact-form input{
     padding: .5em;
 	border-radius: 5em;
 }
+
+@media(max-width:800px){
+    .contact-form{
+        width: 100%;
+    }
+}
+
 textarea{
     height: 15em;
 }
+
 .contact-form input, textarea{
     display: block;
     width: 60%;
     margin: 1em auto;
 }
+
 input:focus, textarea:focus{
     outline: none;
     background: #fda172;
 }
+
 .contact-form input[type=submit]{
     display: block;
     margin: auto;
@@ -116,35 +163,50 @@ input:focus, textarea:focus{
     width: 8em;
     font-size: 1em;
 }
+
 input[type=submit]{
     background: #fda172;
     color: #f0ffff;
     text-transform: uppercase;
     border: none;
 }
+
 .icon{
     width: 20em;
     margin: 1.2em auto;
     text-align: center;
 }
+
 .icon a i{
     color: #fdf5e6;
     font-size: 3em;
     margin:  0 ;
     padding: 0 .5em;
 }
+
 footer{
 	bottom: 0;
 	width: 100%;
     height: 20em;
-    padding: 5em 0;
+    padding: 5em;
     background: #030303; 
     color: #fe3a22;
+    text-align: center;
+    white-space: nowrap; 
 }
-.footer-form{
-    margin: 2em;
+
+footer p{
+    color: #fdf5e6;
+    padding: 0;
 }
+
 .footer-form input{
     margin: 1.5em 0;
     padding: .5em;
+}
+
+@media(max-width:800px){
+    .footer-form input{
+        padding: 0;
+    }
 }
