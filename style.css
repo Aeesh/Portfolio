@@ -65,16 +65,57 @@ a:hover{
 }
 
 .welcome{
+    display: flex;
+    flex-direction: column;
     background: url('bg-02.jpg');
     width: 100%;
 }
+.welcome .top-wrap{
+    width: 100%;
+    margin: 3em 0;
+}
+.welcome .bottom-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template: auto;
+    gap: 1.5rem;
+  
+    color: #fdf5e6
+    ;
+}
+.welcome .bottom-wrap div:nth-child(1){
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2,auto);
+    color: #fdf5e6;
+    font-size: 1.5em;
+}
+
+.welcome .bottom-wrap div:nth-child(1) p i{
+    color: #fe3a22;
+    font-size: 3em;
+    margin:  0 ;
+    padding: 0 .5em;
+}
+
+.welcome .bottom-wrap div:nth-child(2){
+    background: #fe3a22;
+    color: #fdf5e6;
+}
+
+.welcome .bottom-wrap div:nth-child(2) p{
+    background: #fff;
+    margin: 2em;
+    padding: 1em;
+    color:#fe3a22;
+    text-align: center;
+}
 
 .msg{
-    height: 30%;
-	width: 40%;
-	margin: 15em auto;
+	margin: 2em auto;
     color: #fff;
     text-align: center;
+    white-space: nowrap;
 }
 
 .about{
