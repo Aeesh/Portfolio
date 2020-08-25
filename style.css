@@ -12,7 +12,8 @@ body,html{
 
 header{
 	position: fixed;
-	top: 0;
+    top: 0;
+    background: #101010;
 	width: 100%;
     height: auto;
     z-index: 1;
@@ -21,7 +22,7 @@ header{
 section{
     width: 100%;
     min-height: 100vh;
-    padding: 7em 1.2em 0;
+    padding: 7em 1.2em;
 }
 h2{
     text-transform: uppercase;
@@ -36,14 +37,14 @@ a{
     color: inherit;
 }
 a:hover{
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 #navbar ul{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     margin-left: 5em;
-    padding: 1em;
+    padding: 0 1em;
     list-style-type: none;
 }
 #navbar ul li a{
@@ -55,7 +56,7 @@ a:hover{
 @media(max-width:800px){
     #navbar ul{
         justify-content: space-between;
-        margin-left: -1em;
+        margin-left: 0;
     }
     #navbar ul li a{
         padding: .2em;
@@ -124,44 +125,46 @@ img{
     display: flex;
     justify-content: space-evenly;
     background: #fdf5e6;
+    width: 100%;
 }
 .projects .project-tile{
-    width: 40em;
-    height: 30em;
-    padding-right: 2em;
+    width: 33%;
+    padding: 1em;
     text-align: center;
     white-space: nowrap;
 }
 
 .projects .project-tile iframe{
     width: 100%;
-    height: 60%;
+    height: 25em;
 }
-
-.projects .project-tile h2 a{
+.projects .project-tile h2{
     font-size: 1.2rem;
-    text-decoration: none;
-    text-transform: none;
     color: #fda172;
 }
-
-.projects .project-tile h2 a:hover{
-    font-size: 1em;
-}
-
-.projects .project-tile p a{
-    color: #fda172;
+.project-link a{
+    display: inline-block;
+    background: #fda172;
+    color: #f0ffff;
+    margin: 1em;
+    padding: .5em 1em;
 }
 
 @media(max-width:800px){
     .projects{
         flex-direction: column;
+        align-items: center;
+       
     }
 
     .projects .project-tile{
-        width: 60%;
-        margin: auto;
-        padding: 1em 0;
+        width: 100%;
+        margin:0 1em 2em;
+        padding:  1em;
+    } 
+
+    .projects .project-tile iframe{
+        height: 20em;
     }
 }
 
@@ -241,8 +244,8 @@ input[type=submit]{
 footer{
 	bottom: 0;
 	width: 100%;
-    height: 20em;
-    padding: 5em;
+    height: 10em;
+    padding: 1.2em;
     background: #030303; 
     color: #fe3a22;
     text-align: center;
@@ -260,7 +263,8 @@ footer p{
 }
 
 @media(max-width:800px){
+    
     .footer-form input{
-        padding: 0;
+        padding: .6em;
     }
 }
