@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opaluwa Aisha</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="./Css/menu.css">
+    <title>Document</title>
 </head>
 <body>
+    <nav>
+        <label class="navbar-wrap">
+            <input type="checkbox" >
+           <span class="menu">
+               <span class="hamburger"></span>
+           </span>
     
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#welcome-section">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Moments</a></li>
-                <li><a href="#contact">Contact</a></li>
+           <ul>
+               <li><a href="#welcome-section">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#">Moments</a></li>
+               <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    
-    <section id="welcome-section" class="welcome">
-        <div class="top-wrap">
-            <div class="msg">
-                <h1>Hi, I am Aisha</h1>
-                <h2>a Frontend Developer</h2>
-            </div>
-            <!--  SKILLS  -->
-            <div class="skills">
-                <p>Html <i class="fa fa-html5"></i></p>
-                <p>Css <i class="fa fa-css3"></i></p>
-            </div>
+        </label>
+    </nav>
+
+    <section id="welcome-section" class="welcome"> <br>
+        <div class="msg">
+            <h1>Hi, I am Aisha</h1>
+            <h2>a Frontend Developer</h2>
         </div>
         
-        <div class="bottom-wrap">
-            <!-- TESTIMONIALS -->
-            <div class="testimonial">
+        <div class="skills">
+            <p>Html <i class="fa fa-html5"></i></p>
+            <p>Css <i class="fa fa-css3"></i></p>        
+        </div>
+        <div class="testimonial">
                 <p>
                     <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae odit atque distinctio labore iusto animi.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corrupti aperiam perferendis possimus rem quis earum amet dolorem deserunt repellendus?
@@ -56,89 +56,25 @@
                     -Jenny Doe
                 </p>
             </div>
-        
-        </div>
-    </section>
 
-    <section id="about" class="about">
-        <div>
-            <div>
-                <img src="aisha.jpg" alt="">
-                <div>
-                    <p> Opaluwa Aisha Adam </p>
-                    <h3>Frontend Developer</h3>
-                </div>
+            
+            <div class="moments">
+                <div class="box"> <img src="./Images/m-0.jpg" alt=""> </div>
+                <div class="box"> <img src="./Images/m-1.jpg" alt=""> </div>
+                <div class="box"> <img src="./Images/m-2.jpg" alt=""> </div>
+                <div class="box"> <img src="./Images/m-3.jpg" alt=""> </div>
+                <div class="box"> <img src="./Images/m-4.jpg" alt=""> </div>
+                <div class="box"> <img src="./Images/m-5.jpg" alt=""> </div>
+                <div class="box"> <img src="./Images/m-6.jpg" alt=""> </div>
+                <div class="box"> <img src="./Images/m-7.jpg" alt=""> </div>
+                <div class="box"> <img src="./Images/m-8.jpg" alt=""> </div>
             </div>
-        </div>
-        
-        <p>
-            My name is Opaluwa Aisha Adam. 
-            I am on a journey of becoming a <strong>Frontend Developer</strong> with the help of TIIDElab.
-            I currently have adequate knowledge of <strong>HTML</strong>and <strong>CSS.</strong>
-        </p>
-        <div class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Problem Solving</li>
-                <li>Effective Communication</li>
-           </ul>
-       </div>
-    </section>
 
-    <section id="projects" class="projects">
-        <div class="project-tile">
-            <h2>  landing page </h2>
-            <iframe src="https://a-d-book.netlify.app/" frameborder="0" scrolling="no"></iframe>
-            <div class="project-link">
-                <a href="https://a-d-book.netlify.app/" target="_blank">View</a>
-                <a href="#"  target="_blank">Repo</a>
+            <div class="btn">
+                <h2>About Me</h2>
+                <a href="./Html/about.html" target="_blank"><i class="fa fa-angle-down"></i></a> <br>
             </div>
-        </div>
-        
-        <div class="project-tile">
-            <h2> Technical-Doc page </h2>
-            <iframe src="https://ptech-doc.netlify.app/" frameborder="0" scrolling="no"></iframe>
-            <div class="project-link">
-                <a href="https://ptech-doc.netlify.app/" target="_blank">View</a>
-                <a href="https://github.com/Aeesh/Technical-Doc"  target="_blank">Repo</a>
-            </div>
-        </div>
-        
-        <div class="project-tile">
-            <h2> Signup page </h2>
-            <iframe src="https://aisha-signup-page.netlify.app/signup.html" frameborder="0" scrolling="no"></iframe>
-            <div class="project-link">
-                <a href="https://aisha-signup-page.netlify.app/signup.html" target="_blank">View</a>
-                <a href="https://github.com/Aeesh/ContactForm"  target="_blank">Repo</a>
-            </div>
-        </div>
-    </section>
     
-    <section id="contact">
-        <h2>Get in touch with me!</h2>
-        <div class="icon">
-            <a href="https://github.com/Aeesh" target="_blank"><i class="fa fa-github-square"></i></a>
-            <a href="http://linkedin.com/in/aisha-opaluwa-7287b11b4" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-        </div>
-        <form method="post" name="contact-form" data-netlify='true' class="contact-form">
-            <label for="name"></label>
-            <input type="text" id="name" placeholder="Enter your name">
-            <label for="email"></label>
-            <input type="email" id="email" placeholder="johndoe@gmail.com">
-            <textarea name="" id="" placeholder="Please leave your message here"></textarea>
-            <input type="submit" value="Send">
-        </form>
     </section>
-    
-    <footer>
-        <form  method="post" name="newsletter" data-netlify='true' class="footer-form">
-            <label for="email">Subscribe to my Newsletter</label> <br>
-            <input type="email" id="email" name="email" placeholder="enter your email">
-            <input type="submit" value="Subscribe">
-        </form>
-        <p> &#169 2020 Opaluwa Aisha Adam.</p>
-    </footer>
 </body>
 </html>

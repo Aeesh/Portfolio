@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+li{
+    list-style-type: none;
+}
+
+label .menu{
+    position: absolute;
+    background: #fdf5e6;
+    right: -100px;
+    top: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 0 0 #fdf5e6, 0 0 0 0 #fdf5e6;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
+}
+
+label .hamburger{
+    display: block; /* change to div0*/
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: #fda172;
+    transform-origin: center; /* check */
+    transition: 0.5s ease-in-out;
+}
+
+label .hamburger::before, label .hamburger::after{
+    display: block; /* remove */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fda172;
+}
+
+label .hamburger::before{
+    top: -10px;
+}
+
+label .hamburger::after{
+    bottom: -10px;
+}
+
+label input{
+    display: none;
+}
+
+label input:checked + .menu{
+    box-shadow: 0 0 0 100vw #fdf5e6, 0 0 0 100vh #fdf5e6;
+    border-radius: 0;
+}
+
+label input:checked + .menu .hamburger{
+    transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger::after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+label input:checked + .menu .hamburger::before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+label input:checked + .menu + ul{
+    opacity: 1;
+}
+
+label ul{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.25s 0s ease-in-out;
+    z-index: 200;
+}
+
+label a{
+    display: block;
+    margin-bottom: 1em;
+    font-size: 18px;
+    color: #fda172;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 12px 36px;
+    transition: 0.5s ease-in-out;
+}
+
+label a:hover{
+   background: #fff;
+   color: #fda172;
+   letter-spacing: 2px;
+}

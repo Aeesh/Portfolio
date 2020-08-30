@@ -3,6 +3,7 @@ body,html{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 *{
@@ -10,16 +11,8 @@ body,html{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
-	position: fixed;
-    top: 0;
-    background: #101010;
-	width: 100%;
-    z-index: 1;
-}
-
 section{
-    width: 100%;
+    min-width: 100vw;
     min-height: 100vh;
     padding: 7em 1.2em;
 }
@@ -31,6 +24,19 @@ ul li{
     text-transform: uppercase;
     white-space: nowrap;
 }
+.icon{
+    width: 20em;
+    margin: 1.2em auto;
+    text-align: center;
+}
+
+.icon a i{
+    color: #fdf5e6;
+    font-size: 3em;
+    margin:  0 ;
+    padding: 0 .5em;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -38,108 +44,22 @@ a{
 a:hover{
     font-size: 1.2em;
 }
-#navbar ul{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-left: 5em;
-    padding: 0 1em;
-    list-style-type: none;
-}
-#navbar ul li a{
-    text-decoration: none;
-    color: #fda172;
-    text-transform: uppercase;
-}
 
-@media(max-width:800px){
-    #navbar ul{
-        justify-content: space-between;
-        margin-left: 0;
-        padding: 0;
-    }
-    #navbar ul li a{
-        padding: .2em;
-        font-size: .9em;
-    }  
-}
-
-.welcome{
-    background: url('bg-02.jpg') fixed; 
-    min-height: 50vh;
-    padding: 1px;
-    color: #fff;
-}
-.welcome .top-wrap{
-    width: 100%;
-}
-.welcome .msg{
-    width: 100%;
-    color: #fdf5e6;
-    margin: 200px auto 0;
-    white-space: nowrap;
-    text-align: center;
-}
-
-.welcome .skills{
-    background: #fda172;
-    max-width: 500px;
-    color: #fe3a22;
-    text-align: center;
-    margin: 0 auto;
-    padding: 2rem;
-    font-size: 3rem;
-    text-transform: uppercase;
-    border-radius: 1rem;
-} 
-
-.welcome .skills p i{
-    color: #fe3a22;
-    margin:  0 ;
-    padding: 0 .2em;
-}
-.welcome .bottom-wrap{
-    background:;
-    margin: 1rem;
-    border-radius: 1rem;
-}
-.welcome .bottom-wrap .testimonial{
-   display: flex;
-    text-align: center;
-    width: 100%;
-    padding: 1rem;
-}
-.welcome .bottom-wrap .testimonial p{
-    background: #fe3a22;
-    margin: .5rem;
-    padding: .5rem;
-    border-radius: 1rem;
-    max-height: 400px;
-}
-@media(max-width:700px){
-    .welcome .bottom-wrap .testimonial{
-        flex-direction: column;
-    }
-    .welcome .msg h2{
-        font-size: 1.2rem;
-    }
-}
-.msg{
-	margin: 2em auto;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-}
+/* 
+=========================
+    about section
+=========================
+*/
 
 .about{
     display: flex;
     justify-content: space-evenly;
-    color: #fff;
-    background: #030303;/*#333000*/
+    color: #fdf5e6;
+    background: #09264a;/*#333000*/
 }
 
-.about h2{
-    color: #fe3a22;
+.about h2, .about h3{
+    color: #fda172;
 }
 
 .about > p{
@@ -148,12 +68,16 @@ a:hover{
     height: fit-content;
     margin: 0 5em;
     padding:  5em;
-    color:#fe3a22;
+    color: #fda172;
     text-align: center;
-    border: 1px solid #fe3a22;
+    border: 1px solid #fda172;
     border-radius: 5em;
 }
-
+/* 
+=========================================
+   about section for smaller screen size
+=========================================
+*/
 @media(max-width:800px){
   
     .about{
@@ -169,12 +93,22 @@ a:hover{
     }
 }
 
-img{
+/* 
+=========================
+    about image
+=========================
+*/
+.about img{
     width: 15em;
     height: 15em;
     border-radius: 50%;
 }
 
+/* 
+=========================
+    projects section
+=========================
+*/
 .projects{
     display: flex;
     justify-content: space-evenly;
@@ -204,6 +138,11 @@ img{
     padding: .5em 1em;
 }
 
+/* 
+=========================================
+projects section for smaller screen size
+=========================================
+*/
 @media(max-width:800px){
     .projects{
         flex-direction: column;
@@ -222,6 +161,11 @@ img{
     }
 }
 
+/* 
+=========================
+    contacts section
+=========================
+*/
 #contact{
     background: #fda172;
     color: #fdf5e6;   
@@ -232,6 +176,11 @@ img{
     text-align: center;
 }
 
+/* 
+=========================
+    contact form
+=========================
+*/
 .contact-form{
 	margin: auto;
 	padding: 1em;
@@ -279,58 +228,46 @@ input[type=submit]{
     background: #fda172;
     color: #f0ffff;
     text-transform: uppercase;
+    text-align: center;
     border: none;
 }
 
-.icon{
-    width: 20em;
-    margin: 1.2em auto;
-    text-align: center;
-}
-
-.icon a i{
-    color: #fdf5e6;
-    font-size: 3em;
-    margin:  0 ;
-    padding: 0 .5em;
-}
-
+/* 
+=========================
+    footer section
+=========================
+*/
  footer{
-	bottom: 0;
 	width: 100%;
-    height: 10em;
     padding: 1.2em;
     background: #030303; 
-    color: #fe3a22;
+    color: #fdf5e6;
     text-align: center;
     white-space: nowrap; 
+    font-size: 1.2rem;
 }
-
+/* 
+=========================
+    footer form
+=========================
+*/
 .footer-form{
+    padding: .5rem;
+}
+.footer-form label{
     display: block;
-    width: 100%;
-    margin: 0 auto;
-    
+    margin: 1rem;
+   
 }
-
-footer p{
-    color: #fdf5e6;
-    padding: 0;
+.footer-form input{
+    display:inline-block;
+    width: 15%;
+    margin: 0;
+    padding: .4rem;
 }
-
- .footer-form input{
-    margin: 1.5em 0;
-    padding: .5em;
-}
-
-@media(max-width:800px){
-    footer-form{
-        display: block;
-        width: 70%;
-        margin: 0 auto;
-        
-    }
+@media (max-width:1000px){
     .footer-form input{
-        padding: .6em;
+        display: inline-block;
+        width: 35%;
     }
 }
