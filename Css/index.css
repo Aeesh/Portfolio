@@ -89,6 +89,7 @@ html, body{
     margin-top: 5rem;
     color: #fdf5e6;
     font-weight: bold;
+    text-transform: uppercase;
 }
 /* ==========================
     skills section
@@ -171,6 +172,16 @@ img{
     margin-bottom: ;
 }
 
+@media (max-width:768px){
+    .moments{
+        column-count: 3;
+    }
+}
+@media (max-width:500px){
+    .moments{
+        column-count: 2;
+    }
+}
 
 /* 
 ========================
@@ -190,18 +201,18 @@ img{
 .btn a i{
     color: #fda172;
     font-size: 5rem;
-    animation: size .5s infinite;
+    animation: size 1s infinite;
 }
-@media
+
 /* 
 ========================
-    button keyframe
+    button animation
 ========================
 */
 @keyframes size{
-    0%{font-size: 5.03rem;}
-    25%{font-size: 5.05rem;}
-    50%{font-size: 5.06rem;}
-    100%{font-size: 5rem;}
+    0%{color: #09264a;}
+    25%{color: #fda172;}
+    50%{color: #fda172;}
+    100%{color: #09264a;}
 
 }
