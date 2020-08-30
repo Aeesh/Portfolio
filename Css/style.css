@@ -1,10 +1,5 @@
-body,html{
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
+
+ 
 
 *{
    box-sizing: border-box; 
@@ -15,15 +10,15 @@ section{
     min-width: 100vw;
     min-height: 100vh;
     padding: 7em 1.2em;
-}
+} 
 h2{
     text-transform: uppercase;
-}
+} 
 ul li{
     padding: .3em 0;
     text-transform: uppercase;
     white-space: nowrap;
-}
+} 
 .icon{
     width: 20em;
     margin: 1.2em auto;
