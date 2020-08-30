@@ -6,7 +6,7 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    min-height: 100vh;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -16,11 +16,11 @@ li{
 
 label .menu{
     position: absolute;
-    background: #fdf5e6;
-    right: -100px;
-    top: -100px;
-    width: 200px;
-    height: 200px;
+    background: #09264a;
+    right: 0;
+    top: 0;
+    width: 55px;
+    height: 55px;
     border-radius: 50% 50% 50% 50%;
     box-shadow: 0 0 0 0 #fdf5e6, 0 0 0 0 #fdf5e6;
     cursor: pointer;
@@ -29,24 +29,24 @@ label .menu{
 }
 
 label .hamburger{
-    display: block; /* change to div0*/
+    display: block; 
     position: absolute;
-    top: 135px;
-    left: 50px;
+    top: 25px;
+    right: 10px;
     width: 30px;
     height: 2px;
-    background: #fda172;
-    transform-origin: center; /* check */
+    background: #fdf5e6;
+    transform-origin: center;
     transition: 0.5s ease-in-out;
 }
 
 label .hamburger::before, label .hamburger::after{
-    display: block; /* remove */
+    display: block;
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #fda172;
+    background: #fdf5e6;
 }
 
 label .hamburger::before{
@@ -62,12 +62,13 @@ label input{
 }
 
 label input:checked + .menu{
-    box-shadow: 0 0 0 100vw #fdf5e6, 0 0 0 100vh #fdf5e6;
+    box-shadow: 0 0 0 100vw #09264a, 0 0 0 100vh #09264a;
     border-radius: 0;
+    opacity: .9;
 }
 
 label input:checked + .menu .hamburger{
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 
 label input:checked + .menu .hamburger::after{
@@ -98,7 +99,7 @@ label a{
     display: block;
     margin-bottom: 1em;
     font-size: 18px;
-    color: #fda172;
+    color: #fdf5e6;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -112,3 +113,5 @@ label a:hover{
    color: #fda172;
    letter-spacing: 2px;
 }
+
+*/
