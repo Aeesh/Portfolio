@@ -1,3 +1,8 @@
+
+/* background: #AB84A8;
+background: #D5CABD;
+background: #E1E1F2;
+background: #D5CABD; */
 *,
 *::before,
 *::after {
@@ -11,9 +16,10 @@ html, body {
     line-height: 1.6;
     font-size: 1.2rem;
 }
-section {
+/* section {
     min-height: 100vh;
-}
+    padding: 5rem 1rem; 
+} */
 
 a {
     text-decoration: none;
@@ -21,6 +27,9 @@ a {
 h1, h2 {
     /* padding: 1rem;
     margin: 1rem; */
+}
+h2 {
+    color:#6f73a5;
 }
 .btn {
     border-radius: 5px;
@@ -32,9 +41,32 @@ h1, h2 {
 }
 
 .container {
-
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+}
+section {
+    min-height: 100vh;
+    padding: 5rem 1rem; 
+}
+ul li{
+    padding: .3em 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+    list-style-type: none;
+} 
+.icon{
+    width: 20em;
+    margin: 1.2em auto;
+    text-align: center;
 }
 
+.icon a i{
+    color: #6f73a5;
+    font-size: 3em;
+    margin:  0 ;
+    padding: 0 .5em;
+}
 #welcome-section {
     position: relative;
     background: rgba(218, 112, 214, 0.6);
@@ -70,27 +102,43 @@ h1, h2 {
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 10px 5px 15px #000;
 }
-.angle {
+.welcome-msg h2 {
+    color: #fff;
+}
+.split {
     position: relative;
 }
-.angle::after {
+.split::before {
     content: '';
     position: absolute;
 }
-.angle::after, .angle1::after {
+.split::before, .split2::before{
     width: 100%;
-    height: 150px;
+    height: 100px;
 }
-.angle1::after {
+.split3::before {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+.split2::before {
     content: '';
-    background-color: #f4d4f3;
-    background-color: #e0ffff;
+    background: #fff6ff;
     clip-path: polygon(20% 100%, 100% 0, 0 0);
-    /* clip-path: polygon(0 0, 100% 0, 25% 100%); */
+    /* clip-path: polygon(100% 100%, 100% 0, 0 0); */
+}
+.split3::before {
+    content: '';
+    /* background: rgba(218, 112, 214, 0.6);  */
+    background: #fff7fe;
+    clip-path: polygon(100% 100%, 100% 0, 0 0);
+    /* clip-path: polygon(0 0, 100% 0, 0 100%); */
 }
 
 #about {
-    background:#e0ffff;
+    background: #fff6ff;
+    /* or this shade */
     /* background:#fadadd; */
     padding: 5rem 1rem;
     /* background: rgb(128,128,0);
@@ -108,23 +156,34 @@ h1, h2 {
     margin: 1rem;
 }
 #about .about-content .about-text {
+    background: #e1e1f2;
+    background: #dac0d8;
+    /* background: #ab84a8; */
+    color: #6f73a5;
     width: 75%;
-    padding: 0 0 0 3rem;
+    padding: 1rem;
+    box-shadow: 10px 5px 15px #e1e1f2;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.9);
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+    
 }
 
-#projects {
-    background: #f4d4f3;
-    background:  rgba(218, 112, 214, 0.6);
-}
 /* 
 =========================
     projects section
 =========================
 */
-#projects{
+#projects {
+    background: #dac0d8;
+}
+#projects .projects-container{
     display: flex;
     justify-content: space-evenly;
-    background: #eae0c8;
+    background: #ab84a8;
+    background: #d5cabd;
+    /* background: #f1a1af; */
+    background: rgba(218, 112, 214, 0.6); 
+    background: #dac0d8;
     width: 100%;
     padding-top: 10rem;
 }
@@ -141,15 +200,16 @@ h1, h2 {
 }
 #projects .project-tile h2{
     font-size: 1.2rem;
-    color: #fda172;
+    /* color: #6f73a5; */
+    margin: 1.5rem;
 }
-.project-link a{
+/* .project-link a{
     display: inline-block;
     background: #fda172;
     color: #f0ffff;
     margin: 1em;
     padding: .5em 1em;
-}
+} */
 
 /* 
 =========================================
@@ -174,8 +234,42 @@ projects section for smaller screen size
     }
 }
 
-/* 
-=========================
-    contacts section
-=========================
-*/
+#contact {
+    background: #d5cabd;
+}
+#contact .contact-content {
+    background: #fff7fe;
+    /* background: #e1e1f2; */
+    /* background:  rgba(218, 112, 214, 0.6); */
+    width: 50%;
+    margin: 3rem;
+    padding: 2rem 5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.9);
+}
+
+/* input, textarea {
+    width: 80%;
+    padding: .3rem;
+    margin: .5rem;
+    border-radius: 15px;
+} */
+#contact .contact-content input, 
+#contact .contact-content textarea {
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 15px;
+    outline: none;
+    resize: none;
+    /* border: 1px solid #fff7fe; */
+}
+
+input {
+
+}
+/* #contact .contact-content .contact-form input, #contact .contact-content  .contact-form textarea{
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+} */
