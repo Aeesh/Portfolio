@@ -1,0 +1,176 @@
+/* ======================================
+    hide checkbox for larger screen sizes
+   ======================================
+*/
+
+@media(min-width:501px){
+    nav input, nav .menu{
+    display: none;
+    }
+}
+
+
+/* 
+======================================
+   nav display for larger screen sizes
+======================================
+*/
+
+@media (min-width:501px){
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background: rgba(218, 112, 214, 0.6);
+        background: #fff7fe;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 0 1.5rem;
+        z-index: 1;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li a {
+        text-transform: uppercase;
+        background: #fff;
+        color: #005251;
+        padding: .2rem;
+        border-radius: 5px;
+    }
+    nav ul li a:hover {
+        background: #005251;
+        color: #fff;
+    }
+    /* nav ul li a:active {
+        color: #6f73a5;
+    } */
+    
+}
+/* 
+=========================================
+welcome section for smaller screen size
+=========================================
+*/
+@media (max-width:501px) {
+    #welcome-section .welcome-msg {
+        white-space: nowrap;
+        font-size: .7rem;
+        letter-spacing: .1rem;
+        padding: 1.5rem .5rem;
+        margin: .2rem;
+    }
+    .welcome-msg h1, .welcome-msg h2 {
+        color: #fff;
+        margin: .5rem 0;
+    }
+}
+
+
+/* 
+=========================================
+about section for smaller screen size
+=========================================
+*/
+@media (max-width:768px) {
+    #about .about-content {
+        flex-direction: column;
+        margin: .5rem;
+        padding: .5rem 0;
+    }
+    #about .about-content .about-text2 {
+       width: 100%;
+    }
+}
+@media (max-width:501px) {
+    #about {
+        margin: 0;
+        padding: .5rem 0;
+    }
+    #about h3 {
+        font-size: 1.5rem;
+    }
+    #about .about-content {
+        flex-direction: column;
+        margin: .5rem;
+        padding: .5rem 0;
+    }
+    #about .about-content img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        /* margin: .5rem; */
+    }
+    #about .about-content .skills-con {
+        font-size: 1rem;
+        margin:  .9rem;
+        padding: .5rem 0;
+    }
+    #about .about-content .about-text2 {
+        margin: .5rem .3rem .5rem 0;
+    }
+    #about .about-content .about-text2 {
+        /* width: 20rem;
+        font-size: 1rem;
+        margin: 0; */
+        width: auto;
+        height: auto;
+        /* margin: 1em 0;
+        padding: 5em 0; */
+    }
+}
+/* 
+=========================================
+projects section for smaller screen size
+=========================================
+*/
+@media(max-width:501px) {
+    #contact h2{
+        margin: 8rem 0 0;
+        font-size: 1.2rem;
+    }
+    #contact .contact-content .contact-form {
+        width: 95%;
+    }
+}
+
+/* 
+=========================================
+projects section for smaller screen size
+=========================================
+*/
+@media(max-width:768px){
+    #projects .projects-container{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    #projects .project-tile{
+        width: 100%;
+        margin:0 1em 2em;
+        padding:  1em;
+    } 
+
+    #projects .project-tile iframe{
+        height: 20em;
+    }
+}
+@media (max-width:768px) {
+    .icon a i{
+        font-size: 1.5rem;
+        margin:  0 ;
+        padding: 0 .5em;
+    }
+}
+
+@media (max-width:501px) {
+    footer {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+    .footer-form input {
+        width: 50%;
+    }
+}
