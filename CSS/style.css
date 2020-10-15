@@ -290,7 +290,7 @@ input[type = submit] {
     border: none;
 }
 footer {
-    background: rgba(0, 0, 0, 0.9);
+    background:#000;
     color: #fff;
     padding: 1rem;
 }
