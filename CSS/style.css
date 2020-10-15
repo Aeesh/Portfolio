@@ -15,12 +15,12 @@ html, body {
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
     font-size: 1.2rem;
-    width: 100vw;
     scroll-behavior: smooth;
 }
 
 .container {
     width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 section {
@@ -69,6 +69,9 @@ ul li{
     margin:  0 ;
     padding: 0 .5rem;
 }
+.icon a i:hover {
+    opacity: .8;
+}
 #welcome-section {
     position: relative;
     background: rgba(218, 112, 214, 0.6);
@@ -90,7 +93,7 @@ ul li{
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../Assets/IMAGES/bg1.jpg') no-repeat center center/cover; 
+    background: url('../IMAGES/bg1.jpg') no-repeat center center/cover; 
     z-index: -1;
 }
 
@@ -146,6 +149,7 @@ ul li{
 
 #about {
     background: #fff6ff;
+    color: #000;
     /* background: #e1e1f2; */
     /* or this shade */
     /* background:#fadadd; */
@@ -156,6 +160,7 @@ ul li{
 #about h3 {
     font-size: 2rem;
     color: #005251;
+    -webkit-color: #005251;
 }
 #about .about-content {
     display: flex;
@@ -258,20 +263,31 @@ ul li{
 }
 #contact .contact-content .contact-form input, 
 #contact .contact-content .contact-form textarea {
+    background: #005251;
+    color: #fff;
     white-space: nowrap;
     width: 100%;
     padding: .5rem;
     margin: .5rem;
     border-radius: 15px;
     outline: none;
+    border: none;
     resize: none;
     /* border: 1px solid transparent;
     border: 1px solid #005251; */
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.9);
     /* border: 1px solid #fff7fe; */
 }
 input[type = submit] {
     cursor: pointer;
+    background: #005251; 
+    -moz-background: #005251; 
+    -webkit-background: #005251; 
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
 }
 footer {
     background: rgba(0, 0, 0, 0.9);
@@ -288,15 +304,7 @@ footer p {
     text-align: center;
 }
 
-.footer-icon {
-    margin: .3rem auto;
-}
-.footer-icon a i {
-    color: #6f73a5;
-    font-size: 2rem;
-    margin:  0 ;
-    padding: 0 .5em;
-}
+
 .footer-form input {
     padding: .3rem;
     width: 20%;
@@ -305,7 +313,6 @@ footer p {
 .footer-form input[type = submit] {
     text-transform: uppercase;
     color: #fff;
-    background: red;
     padding: .3rem;
     margin-left: -.5rem;
 }
