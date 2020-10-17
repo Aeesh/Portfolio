@@ -171,7 +171,4 @@ projects section for smaller screen size
     .footer-form input {
         width: 50%;
     }
-    input[type = submit] {
-        padding: .5rem;
-    }
 }
