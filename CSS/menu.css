@@ -1,3 +1,8 @@
+:root {
+    --primaryColor: #2d3c64;
+    --darkGrey: #bfc4c4;
+    --grey: #eaf0f3;
+}
 nav{
     background: rgba(0, 0, 0, 0.9);
 }
@@ -7,7 +12,7 @@ li{
 
 label .menu{
     position: absolute;
-    background:  #005251;
+    background: var( --primaryColor);
     right: 0;
     top: 0;
     width: 55px;
@@ -91,17 +96,18 @@ label a{
     margin-bottom: 1em;
     font-size: 18px;
     background: #fff;
-    color:#005251;
+    color: var(--primaryColor);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    padding: 12px 36px;
+    padding: .2rem;
+    border-radius: 5px;
     transition: 0.5s ease-in-out;
 }
 
 label a:hover{
-   background:#005251;
+   background: var(--primaryColor);
    color: #fff;
    letter-spacing: 2px;
    opacity: .9;

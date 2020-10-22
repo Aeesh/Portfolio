@@ -1,3 +1,8 @@
+:root {
+    --primaryColor: #2d3c64;
+    --darkGrey: #bfc4c4;
+    --grey: #eaf0f3;
+}
 /* ======================================
     hide checkbox for larger screen sizes
    ======================================
@@ -21,7 +26,7 @@
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-        background: rgba(0, 0, 0, 0.8);
+        background: var(--darkGrey);
         padding: 0 1.5rem;
         z-index: 1;
     }
@@ -33,12 +38,12 @@
     nav ul li a {
         text-transform: uppercase;
         background: #fff;
-        color: #005251;
+        color: var(--primaryColor);
         padding: .2rem;
         border-radius: 5px;
     }
     nav ul li a:hover {
-        background: #005251;
+        background: var(--primaryColor);
         color: #fff;
     }
     /* nav ul li a:active {
@@ -54,7 +59,7 @@ welcome section for smaller screen size
 @media (max-width:501px) {
     #welcome-section .welcome-msg {
         white-space: nowrap;
-        font-size: .7rem;
+        font-size: .8rem;
         letter-spacing: .1rem;
         padding: 1.5rem .5rem;
         margin: .2rem;
@@ -125,14 +130,36 @@ projects section for smaller screen size
 */
 @media(max-width:501px) {
     #contact h2{
-        margin: 8rem 0 0;
+        margin: 4rem 0 1rem;
         font-size: 1.2rem;
     }
+    #contact .contact-content {
+        width: 100%;
+        padding: 0;
+    }
     #contact .contact-content .contact-form {
-        width: 95%;
+        width: 85%;
+    }
+    #contact .contact-content .contact-form input, 
+    #contact .contact-content .contact-form textarea {
+        font-size: 1rem;
     }
 }
-
+@media(max-width:320px) {
+    #welcome-section .welcome-msg {
+        font-size: .6rem;
+    }
+    #about .about-content .skills-con {
+        font-size: .9rem;
+    }
+    #contact .contact-content .contact-form input, 
+    #contact .contact-content .contact-form textarea {
+        font-size: .7rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+}
 /* 
 =========================================
 projects section for smaller screen size
@@ -163,12 +190,44 @@ projects section for smaller screen size
     }
 }
 
+/* 
+=========================================
+testimonials section for smaller screen size
+=========================================
+*/
+@media(max-width:800px){
+
+    .views .testimonial{
+        flex-direction: column;
+    }
+    .views .testimonial p {
+        font-size: 1rem;
+    }
+}
+
+/* 
+=========================================
+moments section for smaller screen size
+=========================================
+*/
+@media (max-width:768px){
+    .moments{
+        column-count: 3;
+    }
+}
+@media (max-width:500px){
+    .moments{
+        column-count: 2;
+    }
+}
+
+
 @media (max-width:501px) {
     footer {
-        font-size: 1rem;
         white-space: nowrap;
     }
     .footer-form input {
         width: 50%;
+        font-size: .8rem;
     }
 }
