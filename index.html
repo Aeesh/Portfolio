@@ -3,90 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./Css/index.css">
-    <link rel="stylesheet" href="./Css/style.css"> 
-    <link rel="stylesheet" media="screen and (max-width:500px)" href="./Css/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  media="screen and (max-width:500px)" href="./CSS/menu.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+
     <title>Opaluwa Aisha</title>
 </head>
 <body>
     <div class="container">
-        <!--     navbar section       -->
-    <nav>
-        <label class="navbar-wrap">
-            <input type="checkbox" >
-           <span class="menu">
-               <span class="hamburger"></span>
-           </span>
+        <nav>
+            <label class="navbar-wrap">
+                <input type="checkbox" >
+               <span class="menu">
+                   <span class="hamburger"></span>
+               </span>
+        
+               <ul>
+                   <li><a href="#welcome-section">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <li><a href="#moments">Moments</a></li>
+                   <li><a  class="btn resume" href="./IMAGES/Aisha's-Resume.pdf">Resume</a></li>
+                </ul>
+            </label>
+        </nav>
     
-           <ul>
-               <li><a href="#welcome-section">Home</a></li>
-               <li><a href="./Html/about.html" target="_blank">About</a></li>
-               <li><a href="./Html/about.html#portfolio" target="_blank">Portfolio</a></li>
-               <li><a href="./Html/about.html#contact" target="_blank">Contact</a></li>
-            </ul>
-        </label>
-    </nav>
-<!--        Home section            -->
-    <section id="welcome-section" class="welcome"> <br>
-        <div class="msg">
-            <h1>Hi, I am Aisha</h1>
-            <h2>a Frontend Developer</h2>
-        </div>
-        <!--        skills section            -->
+       <main>
+            <section id="welcome-section">
+                <div class="welcome-msg">
+                    <h2>Hi, I'm Aisha!</h2>
+                    <h1>A FrontEnd Developer</h1>
+                   <!-- <div><a  class="btn resume" href="./IMAGES/Aisha's-Resume.pdf">Resume</a></div> -->
+                </div>
+                <!-- <div><i class="fa fa-angle-down"></i></div> -->
+            </section>
+            
+            <section id="about">
+                <h2>About</h2>
+                <div class="about-content">
+                    <div class="about-text1">
+                        <img src="./IMAGES/aisha.jpg" alt="Opaluwa Aisha">
+                        <h3> Opaluwa Aisha Adam</h3>
+                        <a  class="btn resume" href="./IMAGES/Aisha's-Resume.pdf">Resume</a>
+                        <div class="skills-con">
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>Html</li>
+                                <li>Css</li>
+                                <li>Javascript</li>
+                                <li>Git Version Control System</li>
+                                <li>Problem Solving</li>
+                                <li>Effective Communication</li>
+                           </ul>
+                       </div>
+                    </div>
 
-        <div class="skills">
-            <p>Html <i class="fa fa-html5"></i></p>
-            <p>Css <i class="fa fa-css3"></i></p>        
-            <p>Javascript <i class="fab fa-js-square"></i></p>        
-        </div>
+                    <div class="about-text2">
+                        <p>
+                            I am an aspiring software developer currently undergoing software development program with TIIDElab. 
+                            I have basic knowledge of HTML, CSS, Javascript and Git Version Control System. 
+                            I am currently a finalist of Computer Engineering department at the Federal University of Technology, Minna, 
+                            and have an excellent problem solving skill and loves to read and play volleyball with my free time.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        <!--        testimonial section            -->
-        <div class="testimonial">
-                <p>
-                    <q>Working with Aisha was amazing. She is driven, goal oriented and approaches problem solving beyond adequately.
-                    </q> <br> <br>
-                    -Ayoola Toluwanimi.
-                </p>
-                <p>
-                    <q>An incredibly talented developer but what really makes her stand out is her work ethic and steady approach.
-                    </q> <br> <br>
-                    -Ayodele Samuel Adebayo.
-                </p>
-                <p>
-                    <q> Aisha is a team player and a fantastic developer. Always meets deadline and highly committed.
-                    </q>  <br> <br>
-                    -Akan Asanga
-                </p>
-            </div>
+            <div class="split split2"></div>
 
-<!--        moments section            -->            
-            <div class="moments">
-                <div class="box"> <img src="./Images/m-0.jpg" alt=""> </div>
-                <div class="box"> <img src="./Images/m-1.jpg" alt=""> </div>
-                <div class="box"> <img src="./Images/m-2.jpg" alt=""> </div>
-                <div class="box"> <img src="./Images/m-3.jpg" alt=""> </div>
-                <div class="box"> <img src="./Images/m-4.jpg" alt=""> </div>
-                <div class="box"> <img src="./Images/m-5.jpg" alt=""> </div>
-                <div class="box"> <img src="./Images/m-6.jpg" alt=""> </div>
-                <div class="box"> <img src="./Images/m-7.jpg" alt=""> </div>
-                <div class="box"> <img src="./Images/m-8.jpg" alt=""> </div>
-            </div>
+            <section id="projects">
+                <h2>projects</h2>
+                <div class="projects-container">
+                    <div class="project-tile">
+                        <h2>  landing page </h2>
+                        <iframe src="https://a-d-book.netlify.app/" frameborder="0" scrolling="no"></iframe>
+                        <div class="project-link">
+                            <a class="btn" href="https://a-d-book.netlify.app/" target="_blank">View</a>
+                            <a class="btn" href="https://github.com/Aeesh/book-LP"  target="_blank">Repo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tile">
+                        <h2> Technical-Doc page </h2>
+                        <iframe src="https://ptech-doc.netlify.app/" frameborder="0" scrolling="no"></iframe>
+                        <div class="project-link">
+                            <a class="btn" href="https://ptech-doc.netlify.app/" target="_blank">View</a>
+                            <a class="btn" href="https://github.com/Aeesh/Technical-Doc"  target="_blank">Repo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tile">
+                        <h2> Signup page </h2>
+                        <iframe src="https://aisha-signup-page.netlify.app/signup.html" frameborder="0" scrolling="no"></iframe>
+                        <div class="project-link">
+                            <a class="btn" href="https://aisha-signup-page.netlify.app/signup.html" target="_blank">View</a>
+                            <a class="btn" href="https://github.com/Aeesh/ContactForm"  target="_blank">Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="split split3"></div>
 
-            <div class="btn">
-                <h2>About Me</h2>
-                <div><a href="./Html/about.html" target="_blank"><i class="fa fa-angle-down"></i></a></div> <br>
-            </div>
-    
-    </section>
-    <footer>
-        <form  method="post" name="newsletter" data-netlify='true' class="footer-form">
-            <label for="email">Subscribe to my Newsletter</label>
-            <input type="email" id="email" name="email" placeholder="enter your email" required>
-            <input type="submit" value="Subscribe">
-        </form>
-        <p> &#169 2020 Opaluwa Aisha Adam.</p>
-    </footer>
+            <section id="contact">
+                <h2>Get in touch with me!</h2>
+                <div class="contact-content">
+                    <div class="icon">
+                        <a href="tel:+2348143280190" target="_blank"><i class="fa fa-phone"></i></a>
+                        <a href="mailto:adamaisha352@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a href="https://github.com/Aeesh" target="_blank"><i class="fa fa-github-square"></i></a>
+                        <a href="http://linkedin.com/in/aisha-opaluwa-7287b11b4" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                    <form class="contact-form" method="post" name="contact-form" data-netlify='true'>
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="johndoe@gmail.com" required>
+                        <label for="phone"></label>
+                        <input type="tel" id="phone" name="phone" placeholder="phone: +234 1111 222 33" required>
+                        <textarea name="" id="" cols="20" rows="5" placeholder="Please leave your message here"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </section>
+            
+            <div class="split split4"></div>
+
+            <section class="views" id="moments">
+                 <!--        testimonial section            -->
+                <div class="testimonial">
+                    <p>
+                        <q>Working with Aisha was amazing. She is driven, goal oriented and approaches problem solving beyond adequately.
+                        </q> <br> <br>
+                        -Ayoola Toluwanimi.
+                    </p>
+                    <p>
+                        <q>An incredibly talented developer but what really makes her stand out is her work ethic and steady approach.
+                        </q> <br> <br>
+                        -Ayodele Samuel Adebayo.
+                    </p>
+                    <p>
+                        <q> Aisha is a team player and a fantastic developer. Always meets deadline and highly committed.
+                        </q>  <br> <br>
+                        -Akan Asanga
+                    </p>
+                </div>
+                <!--        moments section            -->            
+                <div class="moments">
+                    <div class="box"> <img src="./IMAGES/m-0.jpg" alt=""> </div>
+                    <div class="box"> <img src="./IMAGES/m-1.jpg" alt=""> </div>
+                    <div class="box"> <img src="./IMAGES/m-2.jpg" alt=""> </div>
+                    <div class="box"> <img src="./IMAGES/m-3.jpg" alt=""> </div>
+                    <div class="box"> <img src="./IMAGES/m-4.jpg" alt=""> </div>
+                    <div class="box"> <img src="./IMAGES/m-5.jpg" alt=""> </div>
+                    <div class="box"> <img src="./IMAGES/m-6.jpg" alt=""> </div>
+                    <div class="box"> <img src="./IMAGES/m-7.jpg" alt=""> </div>
+                    <div class="box"> <img src="./IMAGES/m-8.jpg" alt=""> </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-con">
+                    <div class="footer-form">
+                        <form  method="post" name="newsletter" data-netlify='true' class="footer-form">
+                            <!-- <label for="email">Subscribe to my Newsletter</label> -->
+                            <p>Subscribe to my Newsletter</p>
+                            <div>
+                                <input type="email" id="footer-email" name="email" placeholder="enter your email">
+                                <input type="submit" value="Subscribe">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="icon">
+                        <a href="tel:+2348143280190" target="_blank"><i class="fa fa-phone"></i></a>
+                        <a href="mailto:adamaisha352@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a href="https://github.com/Aeesh" target="_blank"><i class="fa fa-github-square"></i></a>
+                        <a href="http://linkedin.com/in/aisha-opaluwa-7287b11b4" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </div>
+                <p> &#169 2020 Opaluwa Aisha Adam.</p>
+            </footer>
+       </main>
     </div>
 </body>
 </html>

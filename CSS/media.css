@@ -1,0 +1,234 @@
+:root {
+    --primaryColor: #2d3c64;
+    --darkGrey: #bfc4c4;
+    --grey: #eaf0f3;
+}
+/* ======================================
+    hide checkbox for larger screen sizes
+   ======================================
+*/
+
+@media(min-width:501px){
+    nav input, nav .menu{
+    display: none;
+    }
+}
+
+
+/* 
+======================================
+   nav display for larger screen sizes
+======================================
+*/
+
+@media (min-width:501px){
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background: var(--darkGrey);
+        padding: 0 1.5rem;
+        z-index: 1;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li a {
+        text-transform: uppercase;
+        background: #fff;
+        color: var(--primaryColor);
+        padding: .2rem;
+        border-radius: 5px;
+    }
+    nav ul li a:hover {
+        background: var(--primaryColor);
+        color: #fff;
+    }
+    /* nav ul li a:active {
+        color: #6f73a5;
+    } */
+    
+}
+/* 
+=========================================
+welcome section for smaller screen size
+=========================================
+*/
+@media (max-width:501px) {
+    #welcome-section .welcome-msg {
+        white-space: nowrap;
+        font-size: .8rem;
+        letter-spacing: .1rem;
+        padding: 1.5rem .5rem;
+        margin: .2rem;
+    }
+    .welcome-msg h1, .welcome-msg h2 {
+        color: #fff;
+        margin: .5rem 0;
+    }
+}
+
+
+/* 
+=========================================
+about section for smaller screen size
+=========================================
+*/
+@media (max-width:768px) {
+    #about .about-content {
+        flex-direction: column;
+        margin: .5rem;
+        padding: .5rem 0;
+    }
+    #about .about-content .about-text2 {
+       width: 100%;
+    }
+}
+@media (max-width:501px) {
+    #about {
+        margin: 0;
+        padding: .5rem 0;
+    }
+    #about h3 {
+        font-size: 1.5rem;
+    }
+    #about .about-content {
+        flex-direction: column;
+        margin: .5rem;
+        padding: .5rem 0;
+    }
+    #about .about-content img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        /* margin: .5rem; */
+    }
+    #about .about-content .skills-con {
+        font-size: 1rem;
+        margin:  .9rem;
+        padding: .5rem 0;
+    }
+    #about .about-content .about-text2 {
+        margin: .5rem .3rem .5rem 0;
+    }
+    #about .about-content .about-text2 {
+        /* width: 20rem;
+        font-size: 1rem;
+        margin: 0; */
+        width: auto;
+        height: auto;
+        /* margin: 1em 0;
+        padding: 5em 0; */
+    }
+}
+/* 
+=========================================
+projects section for smaller screen size
+=========================================
+*/
+@media(max-width:501px) {
+    #contact h2{
+        margin: 4rem 0 1rem;
+        font-size: 1.2rem;
+    }
+    #contact .contact-content {
+        width: 100%;
+        padding: 0;
+    }
+    #contact .contact-content .contact-form {
+        width: 85%;
+    }
+    #contact .contact-content .contact-form input, 
+    #contact .contact-content .contact-form textarea {
+        font-size: 1rem;
+    }
+}
+@media(max-width:320px) {
+    #welcome-section .welcome-msg {
+        font-size: .6rem;
+    }
+    #about .about-content .skills-con {
+        font-size: .9rem;
+    }
+    #contact .contact-content .contact-form input, 
+    #contact .contact-content .contact-form textarea {
+        font-size: .7rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+}
+/* 
+=========================================
+projects section for smaller screen size
+=========================================
+*/
+@media(max-width:768px){
+    #projects .projects-container{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    #projects .project-tile{
+        width: 100%;
+        margin:0 1em 2em;
+        padding:  1em;
+    } 
+
+    #projects .project-tile iframe{
+        height: 20em;
+    }
+}
+@media (max-width:768px) {
+    .icon a i{
+        font-size: 1.5rem;
+        margin:  0 ;
+        padding: 0 .5em;
+    }
+}
+
+/* 
+=========================================
+testimonials section for smaller screen size
+=========================================
+*/
+@media(max-width:800px){
+
+    .views .testimonial{
+        flex-direction: column;
+    }
+    .views .testimonial p {
+        font-size: 1rem;
+    }
+}
+
+/* 
+=========================================
+moments section for smaller screen size
+=========================================
+*/
+@media (max-width:768px){
+    .moments{
+        column-count: 3;
+    }
+}
+@media (max-width:500px){
+    .moments{
+        column-count: 2;
+    }
+}
+
+
+@media (max-width:501px) {
+    footer {
+        white-space: nowrap;
+        font-size: 1.2rem;
+    }
+    .footer-form input {
+        width: 50%;
+        font-size: .8rem;
+    }
+}
