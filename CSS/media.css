@@ -225,6 +225,7 @@ moments section for smaller screen size
 @media (max-width:501px) {
     footer {
         white-space: nowrap;
+        font-size: 1.2rem;
     }
     .footer-form input {
         width: 50%;
