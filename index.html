@@ -26,7 +26,7 @@
                    <li><a href="#projects">Projects</a></li>
                    <li><a href="#contact">Contact</a></li>
                    <li><a href="#moments">Moments</a></li>
-                   <li><a  class="btn resume" href="./IMAGES/Aisha's-Resume.pdf">Resume</a></li>
+                   <li><a  class="resume" href="./IMAGES/Aisha's-Resume.pdf">Resume</a></li>
                 </ul>
             </label>
         </nav>
@@ -55,6 +55,7 @@
                                 <li>Css</li>
                                 <li>Javascript</li>
                                 <li>Git Version Control System</li>
+                                <li>Bootstrap</li>
                                 <li>Problem Solving</li>
                                 <li>Effective Communication</li>
                            </ul>
@@ -63,10 +64,11 @@
 
                     <div class="about-text2">
                         <p>
-                            I am an aspiring software developer currently undergoing software development program with TIIDElab. 
-                            I have basic knowledge of HTML, CSS, Javascript and Git Version Control System. 
-                            I am currently a finalist of Computer Engineering department at the Federal University of Technology, Minna, 
-                            and have an excellent problem solving skill and loves to read and play volleyball with my free time.
+                            A FrontEnd developer passionate about translating designs into optimized web applications.
+                            Proficient in HTML, CSS, Javascript, Bootstrap and Git Version Control System.
+                            I am currently undergoing a software development program with TIIDElab. 
+                            Also a finalist of Computer Engineering department at the Federal University of Technology, Minna. 
+                            I have an excellent problem solving skill and loves to read and play volleyball with my free time.
                         </p>
                     </div>
                 </div>
@@ -119,12 +121,16 @@
                     </div>
                     <form class="contact-form" method="post" name="contact-form" data-netlify='true'>
                         <label for="name"></label>
-                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        
                         <label for="email"></label>
-                        <input type="email" id="email" placeholder="johndoe@gmail.com" required>
+                        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+                        
                         <label for="phone"></label>
                         <input type="tel" id="phone" name="phone" placeholder="phone: +234 1111 222 33" required>
-                        <textarea name="" id="" cols="20" rows="5" placeholder="Please leave your message here"></textarea>
+                        
+                        <textarea name="" id="" name="message" cols="20" rows="5" placeholder="Please leave your message here"></textarea>
+                        
                         <input type="submit" value="Send">
                     </form>
                 </div>
