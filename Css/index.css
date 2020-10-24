@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* ======================================
+    hide checkbox for larger screen sizes
+   ======================================
+*/
+
+@media(min-width:501px){
+    nav input, nav .menu{
+    display: none;
+    }
+}
+
+
+/* 
+======================================
+   nav display for larger screen sizes
+======================================
+*/
+
+@media (min-width:501px){
+    nav{
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: #09264a;
+        z-index: 1;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-left: 0em;
+        padding:  1em;
+        list-style-type: none;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #fdf5e6;
+        text-transform: uppercase;
+    }
+}
+
+/* ==========================
+        welcome section
+   ==========================
+*/
+.welcome{
+    position: relative;
+    background: rgba(22, 116, 230, 0.25);
+    min-height: 50vh;
+    height: 100%;
+    width: 100%;
+}
+.welcome::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Images/bg-05.jpg') no-repeat center center/cover; 
+    z-index: -1;
+}
+
+/* ==========================
+   intro text
+   ==========================
+*/
+.msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 5rem;
+    color: #fdf5e6;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* ==========================
+    skills section
+   ==========================
+*/
+
+.skills{
+    background: #09264a;
+    max-width: 500px;
+    color: #fda172;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+} 
+
+.skills p i{
+    color: #fda172;
+    margin:  0 ;
+    padding: 0 .2em;
+}
+
+/* ==================================
+    skills section for smaller sizes
+   ==================================
+*/
+
+@media(max-width:500px){
+    
+    .skills{
+        margin: .5rem;
+    }
+}
+
+/* 
+========================
+    testimonial section
+========================
+*/
+
+.testimonial{
+    display: flex;
+     text-align: center;
+     width: 100%;
+     padding: 1rem;
+ }
+.testimonial p{
+    background: #09264a;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    max-height: fit-content;
+    font-size: 1.2rem;
+    color: #fdf5e6;
+}
+@media(max-width:800px){
+
+    .welcome .testimonial{
+        flex-direction: column;
+    }
+}
+
+/* 
+========================
+    moments section
+========================
+*/
+
+.moments{
+    background: #fda172;
+    max-width: 800px;
+    margin: 0 auto;
+    column-count: 4;
+    padding: 1em;
+}
+img{
+    width: 100%;
+    margin-bottom: ;
+}
+
+@media (max-width:768px){
+    .moments{
+        column-count: 3;
+    }
+}
+@media (max-width:500px){
+    .moments{
+        column-count: 2;
+    }
+}
+
+/* 
+========================
+    button icon
+========================
+*/
+.btn{
+    text-align: center;
+    color: #fdf5e6;
+}
+.btn h2{
+    margin-bottom: 0;
+    padding-top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn a i{
+    color: #fda172;
+    font-size: 5rem;
+    animation: size 1s infinite;
+}
+
+/* 
+========================
+    button animation
+========================
+*/
+@keyframes size{
+    0%{color: #09264a;}
+    25%{color: #fda172;}
+    50%{color: #fda172;}
+    100%{color: #09264a;}
+
+}
