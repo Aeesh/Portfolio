@@ -25,11 +25,7 @@ background: #D5CABD; */
 html, body {
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
-<<<<<<< HEAD
-    font-size: 1.2rem;
-=======
     /* font-size: 1.2rem; */
->>>>>>> Aisha
     scroll-behavior: smooth;
 }
 
@@ -43,10 +39,7 @@ section {
     width: 100%;
     padding: 5rem 1rem; 
     margin: 0 auto;
-<<<<<<< HEAD
-=======
     min-height: 100vh;
->>>>>>> Aisha
 }
 
 a {
@@ -64,11 +57,7 @@ h2 {
     border-radius: 5px;
     background: #fff;
     color:var(--primaryColor);
-<<<<<<< HEAD
-    padding: .4rem;
-=======
     padding: .5rem;
->>>>>>> Aisha
     margin: 2rem 1rem;
     text-transform: uppercase;
 }
@@ -156,19 +145,11 @@ ul li{
 }
 .split::before, .split2::before, .split4::before{
     width: 100%;
-<<<<<<< HEAD
-    height: 130px;
-}
-.split3::before {
-    width: 100%;
-    height: 150px;
-=======
     height: 100px;
 }
 .split3::before {
     width: 100%;
     height: 100px;
->>>>>>> Aisha
     margin: 0;
     padding: 0;
 }
@@ -199,13 +180,6 @@ ul li{
     /* background: #e1e1f2; */
     /* or this shade */
     /* background:#fadadd; */
-<<<<<<< HEAD
-    padding: 5rem 1rem;
-    /* background: rgb(128,128,0);
-    background: #ecebbd; */
-}
-#about h3 {
-=======
     /* padding: 3rem 1rem; */
     /* background: rgb(128,128,0);
     background: #ecebbd; */
@@ -215,7 +189,6 @@ ul li{
 }
 #about h3 {
     margin: 0 0 1rem;
->>>>>>> Aisha
     font-size: 2rem;
     color:var(--primaryColor);
     -webkit-color:var(--primaryColor);
@@ -223,13 +196,9 @@ ul li{
 #about .about-content {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
-    padding: 3rem;
-=======
     margin: 0 auto;
     /* width: 80%; */
     padding: 1rem;
->>>>>>> Aisha
 }
 
 #about .about-content img {
@@ -239,17 +208,6 @@ ul li{
     margin: 1rem;
 }
 #about .about-content .skills-con {
-<<<<<<< HEAD
-    margin: 1rem;
-    padding: 1rem;
-}
-
-#about .about-content .about-text2 {
-    background:var(--darkGrey);
-    color: var(--primaryColor);
-    width: 75%;
-    margin: 10rem 1rem;
-=======
     margin: 1rem 0;
     padding: 1rem 0;
 }
@@ -262,7 +220,6 @@ ul li{
     color: var(--primaryColor);
     width: 65%;
     height: fit-content;
->>>>>>> Aisha
     padding: 2rem 1rem;
     font-size: 1.5rem;
     box-shadow: 10px 5px 15px #e1e1f2;
@@ -320,11 +277,7 @@ ul li{
    white-space: nowrap;
 }
 #contact h2{
-<<<<<<< HEAD
-    margin: 3rem 0 1rem;
-=======
     margin: 3rem 0 0;
->>>>>>> Aisha
 }
 #contact .contact-content {
     /* background: #fff7fe; */
@@ -333,11 +286,7 @@ ul li{
     /* background: var(--darkGrey); */
     width: 50%;
     margin: 0 auto;
-<<<<<<< HEAD
-    padding: 2rem 0;
-=======
     /* padding: 2rem 0; */
->>>>>>> Aisha
     /* margin: 3rem;
     padding: 2rem 5rem; */
     border-radius: 20px;
@@ -354,15 +303,9 @@ ul li{
 #contact .contact-content .contact-form textarea {
     background: var(--darkGrey);
     white-space: nowrap;
-<<<<<<< HEAD
-    font-size: 1.2rem;
-    width: 100%;
-    padding: .6rem;
-=======
     font-size: 1rem;
     width: 100%;
     padding: .5rem;
->>>>>>> Aisha
     margin: .5rem;
     border-radius: 15px;
     outline: none;
@@ -458,14 +401,7 @@ footer p {
     color: #fff;
     padding: .3rem;
     margin-left: -.5rem;
-<<<<<<< HEAD
 }
 .footer-form input[type = submit]:hover {
     opacity: .9;
 }
-=======
-}
-.footer-form input[type = submit]:hover {
-    opacity: .9;
-}
->>>>>>> Aisha
