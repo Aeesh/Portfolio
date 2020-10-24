@@ -1,14 +1,10 @@
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
+:root {
+    --primaryColor: #2d3c64;
+    --darkGrey: #bfc4c4;
+    --grey: #eaf0f3;
 }
-
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-height: 100vh;
-    line-height: 1.6;
-    overflow-x: hidden;
+nav{
+    background: rgba(0, 0, 0, 0.9);
 }
 li{
     list-style-type: none;
@@ -16,13 +12,13 @@ li{
 
 label .menu{
     position: absolute;
-    background: #09264a;
+    background: var( --primaryColor);
     right: 0;
     top: 0;
     width: 55px;
     height: 55px;
     border-radius: 50% 50% 50% 50%;
-    box-shadow: 0 0 0 0 #fdf5e6, 0 0 0 0 #fdf5e6;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.9), 0 0 0 0 rgba(0, 0, 0, 0.9);
     cursor: pointer;
     transition: 0.5s ease-in-out;
     z-index: 100;
@@ -62,7 +58,7 @@ label input{
 }
 
 label input:checked + .menu{
-    box-shadow: 0 0 0 100vw #09264a, 0 0 0 100vh #09264a;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8), 0 0 0 100vh   rgba(0, 0, 0, 0.8);
     border-radius: 0;
     opacity: .9;
 }
@@ -99,19 +95,20 @@ label a{
     display: block;
     margin-bottom: 1em;
     font-size: 18px;
-    color: #fdf5e6;
+    background: #fff;
+    color: var(--primaryColor);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    padding: 12px 36px;
+    padding: .2rem;
+    border-radius: 5px;
     transition: 0.5s ease-in-out;
 }
 
 label a:hover{
-   background: #fff;
-   color: #fda172;
+   background: var(--primaryColor);
+   color: #fff;
    letter-spacing: 2px;
+   opacity: .9;
 }
-
-*/
