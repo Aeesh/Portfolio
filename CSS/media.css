@@ -181,6 +181,8 @@ projects section for smaller screen size
     #projects .project-tile iframe{
         height: 20em;
     }
+    #projects .project-tile .description {
+        font-style: 1rem;
 }
 @media (max-width:768px) {
     .icon a i{

@@ -251,10 +251,17 @@ ul li{
     width: 100%;
 }
 #projects .project-tile{
+    display: flex;
+    flex-direction: column;
     width: 33%;
     padding: 1em;
     text-align: center;
     white-space: nowrap;
+}
+#projects .project-tile .description {
+    color: #fff;
+    width: 33%;
+    white-space: normal;
 }
 
 #projects .project-tile iframe{
