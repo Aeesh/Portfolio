@@ -167,22 +167,30 @@ projects section for smaller screen size
 */
 @media(max-width:768px){
     #projects .projects-container{
+        display: flex;
         flex-direction: column;
         align-items: center;
        
     }
 
     #projects .project-tile{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         margin:0 1em 2em;
         padding:  1em;
     } 
+    #projects .project-tile .frame {
+        margin: 0 auto;
+    }
 
     #projects .project-tile iframe{
         height: 20em;
     }
     #projects .project-tile .description {
         font-style: 1rem;
+        margin: 0 auto;
+        padding: 0;
 }
 @media (max-width:768px) {
     .icon a i{
@@ -233,4 +241,5 @@ moments section for smaller screen size
         width: 50%;
         font-size: .8rem;
     }
+}
 }

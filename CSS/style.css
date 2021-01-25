@@ -247,20 +247,28 @@ ul li{
 }
 #projects .projects-container{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
 }
 #projects .project-tile{
-    display: flex;
-    flex-direction: column;
-    width: 33%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
     padding: 1em;
     text-align: center;
     white-space: nowrap;
 }
+#projects .project-tile .frame {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
 #projects .project-tile .description {
     color: #fff;
     white-space: normal;
+    margin: 5rem auto;
+    padding: 2rem;
 }
 
 #projects .project-tile iframe{
