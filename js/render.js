@@ -17,6 +17,23 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', next);
   });
 
+  // ── HAMBURGER ──────────────────────────────────────────────────────
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+
+  // close menu when a link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+
   // ── NAV ──────────────────────────────────────────────────────────
   document.querySelector('.nav-logo').innerHTML = `${BIO.initials}<span>.</span>`;
   document.querySelector('.nav-cta').href = `mailto:${BIO.email}`;
