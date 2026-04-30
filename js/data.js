@@ -33,10 +33,10 @@ const BIO = {
 Background in NLP, scientific computing, and five years of production
 software engineering.`,
   about: [
-    `I'm an AI researcher and engineer at CMU, currently working as a Research Assistant. My work sits at the intersection of <strong>NLP systems</strong>, <strong>model evaluation</strong>, and <strong>computational materials science</strong> — with a consistent thread of caring whether things actually work and being able to demonstrate why.`,
-    `I TA'd Introduction to Deep Learning at CMU Africa, which sharpened a conviction that <strong>explaining something clearly is how you know you understand it</strong>. That shows up in how I build: not just accuracy, but what the failure modes are, where the model breaks, and why.`,
-    `I also have five years experience building production software — privacy-preserving AI infrastructure (FHE, MPC, blockchain), full-stack DeFi protocols on Tezos with smart contract integration, and genomics platforms. I bring research rigour and the engineering discipline that comes from shipping things that have to work.`,
-    `Targeting <strong>ML/AI engineering and research roles</strong>. Also genuinely interested in human-AI interaction and AI ethics research — my computational materials science thread is a foundation for scientific ML/AI, not a detour.`,
+    `I'm an AI researcher and engineer at CMU, currently working as a Research Assistant. My work sits at the intersection of <strong>NLP systems</strong>, <strong>model evaluation</strong>, and <strong>computational materials science</strong>, with a consistent thread of caring whether things actually work and being able to demonstrate why. That means evaluation design, interpretability, and building frameworks that surface failure modes before deployment.`,
+    `I TA'd Introduction to Deep Learning at CMU, which sharpened a conviction that <strong>explaining something clearly is how you know you understand it</strong>. That shows up in how I build: not just accuracy, but where models break, and why.`,
+    `With five years experience building production software — privacy-preserving AI infrastructure (FHE, MPC, blockchain), full-stack DeFi protocols on Tezos with smart contract integration, and genomics platforms, I think carefully about system design, tradeoffs, and how decisions hold up in practice.`,
+    `Targeting <strong>ML/AI engineering and research roles</strong>. Also genuinely interested in human-AI interaction and AI ethics research — my computational materials science thread is a foundation for scientific ML/AI.`,
   ],
   currently: `<strong>Research Assistant</strong>, Carnegie Mellon University<br>DFT simulations on wolframite materials; manuscript in preparation.`,
   education: `<strong>MSc Engineering & AI</strong> — CMU, 2024–2025<br>TA: Intro to Deep Learning · Research Methods in Engineering`,
@@ -47,7 +47,7 @@ software engineering.`,
 
 const STATS = [
   { val: "CMU",  label: "MSc Engineering & AI, 2024–2025" },
-  { val: "5yr",  label: "Production Engineering Experience" },
+  { val: "5yr",  label: "Production Software Engineering Experience" },
   { val: "DFT",  label: "Quantum Materials Research, Manuscript In Prep" },
 ];
 
@@ -169,11 +169,11 @@ unimodal system rather than just assuming it would.`,
     title:         "Monadic DNA",
     subtitle:      "Privacy-Preserving AI · Blockchain",
     category:      "Privacy AI",
-    year:          "2024",
+    year:          "2024–2025",
     featured:      false,
     rowGroup:      2,
     groupSize:     2,
-    liveUrl:       null,
+    liveUrl:       "https://monadicdna.com/",
     githubUrl:     "https://github.com/Monadic-DNA/MonadicDNA",
     huggingfaceUrl:null,
     previewImage:  null,
@@ -196,12 +196,12 @@ privacy guarantees — not a proof-of-concept.`,
     featured:      false,
     rowGroup:      2,
     groupSize:     2,
-    liveUrl:       null,
+    liveUrl:       "https://app.tezos.finance/",
     githubUrl:     "https://github.com/StableTechnologies/TezFin",
     huggingfaceUrl:null,
     previewImage:  null,
     description:   `Full-stack engineering across TezFin (decentralised lending protocol)
-and TEZEX exchange on Tezos — 200+ commits shipped to production apps serving
+and TEZEX exchange on Tezos —  shipped to production apps serving
 real mainnet users. Work spanned frontend, smart contract integration,
 blockchain operations, and wallet SDK integration end-to-end.`,
     highlights: [
@@ -235,7 +235,7 @@ and clean UI engineering.`,
 // ── EXPERIENCE ────────────────────────────────────────────────────────────────
 const EXPERIENCE = [
   {
-    period: "Jan 2026 – Present",
+    period: "Aug 2025 – Present",
     org:    "Carnegie Mellon University",
     role:   "Research Assistant",
     bullets: [
@@ -259,7 +259,7 @@ const EXPERIENCE = [
     role:   "Software Engineer",
     bullets: [
       "Built privacy-preserving AI infrastructure combining FHE, MPC, and blockchain for secure genomic data sharing (Monadic DNA)",
-      "Full-stack engineering across TezFin, TEZEX, and Galleon wallet — 200+ commits to mainnet production apps including smart contract integration and blockchain operations",
+      "Full-stack engineering across TezFin, TEZEX, and Galleon wallet —  shipped to mainnet production apps including smart contract integration and blockchain operations",
       "Cross-functional across AI, privacy engineering, smart contracts, and product design",
     ],
   },
