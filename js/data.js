@@ -75,7 +75,7 @@ const PROJECTS = [
     featured:      false, // TODO: set to true once deployed
     filterTag:     "ai-engineering",
     rowGroup:      0, // TODO: set to null once deployed
-    groupSize:     1, // TODO: set to null once deployed
+    groupSize:     2, // TODO: set to null once deployed
     liveUrl:       null,
     githubUrl:     "https://github.com/aeesh/paper-qa-system",
     huggingfaceUrl:null,
@@ -101,8 +101,8 @@ analysis that distinguishes retrieval misses from model hallucination.`,
     category:      "NLP / Fine-tuning",
     year:          "2026",
     featured:      false,
-    rowGroup:      1,
-    groupSize:     3,
+    rowGroup:      0,
+    groupSize:     2,
     liveUrl:       null,
     githubUrl:     "https://github.com/aeesh/abstract-classifier",
     huggingfaceUrl:null,   // add HF Hub URL here when published
@@ -143,6 +143,32 @@ matters as much as the result.`,
       "Grad-CAM heatmaps for clinical interpretability of individual predictions",
     ],
     stack: ["PyTorch", "ConvNeXt", "VGG16", "Grad-CAM", "Transfer Learning"],
+  },
+  {
+    id:            "cipherbot-study",
+    title:         "Chatbot Access Advantage Study",
+    subtitle:      "Human-AI Interaction · Educational AI · QCRI",
+    category:      "AI Research",
+    year:          "2025",
+    featured:      false,
+    filterTag:     "ai-research",
+    rowGroup:      1,
+    groupSize:     3,
+    liveUrl:       null, // "https://cipherbot.qcri.org",
+    githubUrl:     null,
+    huggingfaceUrl:null,
+    previewImage:  null,
+    description:   `Research study conducted with Qatar Computing Research Institute
+  analysing how access conditions affect student engagement with CipherBot,
+  an AI-powered educational platform. Investigated how modality (text vs audio),
+  mobile access, and translation features shaped dialogue complexity and
+  learning interaction patterns.`,
+    highlights: [
+      "Analysed student–AI dialogue corpora for engagement and interaction patterns",
+      "Compared modality effects: text vs audio, mobile vs desktop, native vs translated",
+      "Research sits at the intersection of human-AI interaction and educational technology",
+    ],
+    stack: ["Dialogue Analysis", "Human-AI Interaction", "Educational AI", "QCRI"],
   },
   {
     id:            "emotion-recognition",
