@@ -76,7 +76,7 @@ const PROJECTS = [
     filterTag:     "ai-engineering",
     rowGroup:      0, // TODO: set to null once deployed
     groupSize:     2, // TODO: set to null once deployed
-    liveUrl:       null,
+    liveUrl:       "https://huggingface.co/spaces/aeesh1/paper-qa-system",
     githubUrl:     "https://github.com/aeesh/paper-qa-system",
     huggingfaceUrl:null,
     previewImage:  null,   // e.g. "assets/paper-qa.png"
@@ -103,9 +103,9 @@ analysis that distinguishes retrieval misses from model hallucination.`,
     featured:      false,
     rowGroup:      0,
     groupSize:     2,
-    liveUrl:       null,
+    liveUrl:       "https://huggingface.co/spaces/aeesh1/arxiv-abstract-classifier",
     githubUrl:     "https://github.com/aeesh/abstract-classifier",
-    huggingfaceUrl:null,   // add HF Hub URL here when published
+    huggingfaceUrl:"https://huggingface.co/aeesh1/arxiv-abstract-classifier",
     previewImage:  null,
     description:   `Fine-tuned DistilBERT on 28k arXiv abstracts across 11 scientific
 fields, trained on PSC Bridges-2 V100 GPUs via SLURM. Goes beyond accuracy:
