@@ -256,16 +256,16 @@ function highlightsHTML(p) {
 }
 
 function previewHTML(p) {
-  // Live iframe takes priority
+  // static image
+  if (p.previewImage) {
+    return `<img src="${p.previewImage}" class="preview-img" alt="${p.title} preview">`;
+  }
+  // Then Live iframe takes priority
   if (p.liveUrl) {
     return `
       <span class="preview-label">Live</span>
       <iframe src="${p.liveUrl}" class="preview-frame" title="${p.title} preview" loading="lazy"></iframe>
     `;
-  }
-  // Then static image
-  if (p.previewImage) {
-    return `<img src="${p.previewImage}" class="preview-img" alt="${p.title} preview">`;
   }
   // Placeholder
   return `

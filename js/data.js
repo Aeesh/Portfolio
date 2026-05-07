@@ -73,13 +73,13 @@ const PROJECTS = [
     category:      "Benchmark Design",
     year:          "2026",
     featured:      true,
-    filterTag:     "ai-research",
+    filterTag:     "ai-engineering",
     rowGroup:      null,
     groupSize:     null,
     liveUrl:       "https://scireason-bench.streamlit.app",
     githubUrl:     "https://github.com/Aeesh/scireason-bench",
     huggingfaceUrl:null,
-    previewImage:  null,
+    previewImage:  "assets/scireason-preview.png",
     description:   `A structured benchmark evaluating 4 LLMs across 5 scientific reasoning
   categories — factual recall, conceptual explanation, numerical reasoning,
   cross-domain synthesis, and calibration. The calibration category tests whether
