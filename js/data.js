@@ -67,18 +67,47 @@ const OPEN_TO = [
 
 const PROJECTS = [
   {
+    id:            "scireason-bench",
+    title:         "SciReason-Bench",
+    subtitle:      "LLM Evaluation · Scientific Reasoning",
+    category:      "Benchmark Design",
+    year:          "2026",
+    featured:      true,
+    filterTag:     "ai-research",
+    rowGroup:      null,
+    groupSize:     null,
+    liveUrl:       "https://scireason-bench.streamlit.app",
+    githubUrl:     "https://github.com/Aeesh/scireason-bench",
+    huggingfaceUrl:null,
+    previewImage:  null,
+    description:   `A structured benchmark evaluating 4 LLMs across 5 scientific reasoning
+  categories — factual recall, conceptual explanation, numerical reasoning,
+  cross-domain synthesis, and calibration. The calibration category tests whether
+  models know what they don't know, a critical property for deployed AI systems.
+  Scored by LLM-as-judge with an explicit rubric; findings go beyond accuracy
+  to reveal where model size fails to predict performance.`,
+    highlights: [
+      "100 questions across AI/ML and materials science; 4 models (Gemini, Phi-3, Mistral, Llama) evaluated end-to-end",
+      "Calibration & uncertainty category: tests whether models express appropriate doubt rather than confident wrong answers",
+      "Key finding: Phi-3 Mini (3.8B) outperforms Mistral 7B indicating architecture and training data matter more than parameter count at this scale",
+      "Numerical reasoning is the sharpest differentiator with 36–45% for open-source vs 95% for Gemini",
+      "Honest limitations: judge bias documented, single-run variance acknowledged, future work clearly scoped",
+    ],
+    stack: ["Python", "Gemini API", "Ollama", "Streamlit", "LLM-as-Judge", "Pandas", "Matplotlib"],
+  },
+  {
     id:            "paper-qa",
     title:         "Scientific Paper QA System",
     subtitle:      "RAG · Retrieval Design · Evaluation",
     category:      "NLP / AI Systems",
     year:          "2026",
-    featured:      false, // TODO: set to true once deployed
+    featured:      false,
     filterTag:     "ai-engineering",
-    rowGroup:      0, // TODO: set to null once deployed
-    groupSize:     2, // TODO: set to null once deployed
-    liveUrl:       "https://huggingface.co/spaces/aeesh1/paper-qa-system",
+    rowGroup:      0,
+    groupSize:     2,
+    liveUrl:       null, // "https://huggingface.co/spaces/aeesh1/paper-qa-system",
     githubUrl:     "https://github.com/aeesh/paper-qa-system",
-    huggingfaceUrl:null,
+    huggingfaceUrl:"https://huggingface.co/spaces/aeesh1/paper-qa-system",
     previewImage:  null,   // e.g. "assets/paper-qa.png"
     description:   `A retrieval-augmented generation pipeline for querying domain-specific
 research papers. The interesting part isn't the RAG — it's the evaluation
