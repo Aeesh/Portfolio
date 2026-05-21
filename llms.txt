@@ -1,0 +1,85 @@
+# Aisha Adam Opaluwa — AI Researcher & Engineer
+
+MSc Engineering & AI, Carnegie Mellon University (2024–2025).
+Currently Research Assistant at CMU (DFT simulations on wolframite materials, manuscript in preparation).
+Open to: ML Engineering, AI Engineering, AI Research, Scientific ML, Human-AI Interaction, AI Ethics Research.
+
+Contact: adamaisha352@gmail.com
+GitHub: https://github.com/aeesh
+LinkedIn: http://linkedin.com/in/aisha-opaluwa-7287b11b4
+
+---
+
+## Projects
+
+### SciReason-Bench (2026)
+Category: LLM Evaluation · Benchmark Design
+A structured benchmark evaluating 4 LLMs (Gemini, Phi-3, Mistral, Llama) across 5 scientific reasoning categories: factual recall, conceptual explanation, numerical reasoning, cross-domain synthesis, and calibration. 100 questions spanning AI/ML and materials science. Scored by LLM-as-judge. Key finding: model size does not reliably predict performance at this scale.
+Live: https://scireason-bench.streamlit.app
+GitHub: https://github.com/aeesh/scireason-bench
+Stack: Python, Gemini API, Ollama, Streamlit, Pandas, Matplotlib
+
+### Scientific Paper QA System (2026)
+Category: RAG · Retrieval Systems
+End-to-end retrieval-augmented generation pipeline for querying domain-specific research papers. Features a 34-question evaluation dataset with expert-verified answers and a hybrid scorer checking numbers, acronyms, and phrases independently. Failure analysis distinguishes retrieval misses from model hallucination. Fully local via Ollama/Llama 3.2.
+GitHub: https://github.com/aeesh/paper-qa-system
+Stack: Python, LlamaIndex, ChromaDB, Ollama, HuggingFace, Streamlit
+
+### arXiv Abstract Classifier (2026)
+Category: NLP · Fine-tuning · Explainability
+Fine-tuned DistilBERT on 28k arXiv abstracts across 11 scientific fields. Trained on PSC Bridges-2 V100 GPUs via SLURM. Token-level explainability via Captum integrated gradients. Model published to HuggingFace Hub.
+GitHub: https://github.com/aeesh/abstract-classifier
+Stack: PyTorch, HuggingFace, Captum, WandB, SLURM
+
+### Monkeypox Detection + Explainability (2025)
+Category: Medical Imaging · Computer Vision
+Extended a published VGG16-based clinical detection model by integrating ConvNeXt with transfer learning. Multi-fold cross-validation and Grad-CAM visualisations for clinical interpretability.
+Stack: PyTorch, ConvNeXt, VGG16, Grad-CAM
+
+### Multimodal Emotion Recognition (2024)
+Category: Multimodal AI · Speech & Vision
+Emotion recognition for ASD support contexts fusing CNN facial expression analysis with LSTM speech emotion recognition. Empirically validates fusion design — audio-visual combination outperforms unimodal baselines.
+Stack: PyTorch, CNN, LSTM, MFCC
+
+### Chatbot Access Advantage Study — CipherBot/QCRI (2025)
+Category: Human-AI Interaction · EdTech
+Research study with Qatar Computing Research Institute analysing how access conditions affect student engagement with CipherBot, an AI-powered educational platform. Investigated modality effects (text vs audio), mobile access, and translation features on dialogue complexity.
+
+### Monadic DNA (2024)
+Category: Privacy-Preserving AI · Blockchain
+Contributed to a genomics platform enabling AI inference on encrypted health data using FHE, MPC, and blockchain permissioning. Production software.
+GitHub: https://github.com/Monadic-DNA/MonadicDNA
+Stack: TypeScript, React, FHE/Zama, Nillion, WASM
+
+### TezFin / TEZEX (2022–2024)
+Category: DeFi · Full-Stack Engineering
+Full-stack engineering across TezFin lending protocol and TEZEX exchange on Tezos. 200+ commits to mainnet production apps including smart contract integration.
+GitHub: https://github.com/StableTechnologies/TezFin
+Stack: TypeScript, React, Tezos, Beacon SDK, GraphQL
+
+---
+
+## Experience
+
+Research Assistant, Carnegie Mellon University (Jan 2026 – Present)
+DFT simulations on wolframite oxide materials using Quantum ESPRESSO on HPC clusters. Manuscript in preparation.
+
+Teaching Assistant, Carnegie Mellon University (Aug 2024 – Dec 2025)
+TA for Introduction to Deep Learning (Spring 2025) and Research Methods in Engineering (Fall 2025).
+
+Software Engineer, Recherché Inc (Mar 2021 – Dec 2025)
+Built privacy-preserving AI infrastructure (FHE, MPC, blockchain). Full-stack engineering across TezFin, TEZEX, and Galleon wallet. 200+ commits to mainnet production apps.
+
+Data Analyst, Innovate for Africa (Jan 2021 – Feb 2021)
+Predictive modelling for urban housing analytics.
+
+---
+
+## Skills
+
+AI & ML: PyTorch, HuggingFace Transformers, LlamaIndex, ChromaDB, Captum, WandB, Ollama, scikit-learn, TensorFlow
+Languages: Python, C++, TypeScript, JavaScript
+Infrastructure: HPC/SLURM, PSC Bridges-2, Quantum ESPRESSO, Docker, Git, Streamlit, Flask, REST APIs
+Research: NLP, RAG, LLM Evaluation, Computer Vision, ASR/Speech, Human-AI Interaction, AI Ethics, Scientific ML
+Web: React, Redux, GraphQL, Web3.js, Ethers, Smart Contracts
+Computational Science: DFT Simulation, Materials Science, Privacy-Preserving ML, FHE/MPC

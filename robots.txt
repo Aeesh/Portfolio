@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aishaopaluwa.netlify.app/sitemap.xml
