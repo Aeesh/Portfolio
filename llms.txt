@@ -12,6 +12,13 @@ LinkedIn: http://linkedin.com/in/aisha-opaluwa-7287b11b4
 
 ## Projects
 
+### Quilltale (2026)
+Category: LLM Systems · Agentic AI
+AI text adventure separating story generation from world state enforcement. Formal Python dataclass world model with validated transitions where the LLM cannot contradict tracked facts. Per-NPC episodic memory with significance scoring. Automated evaluation framework measuring factual consistency (85%), memory utilisation (91.7%), and invalid transition rate (~12%). Scene images via FLUX.1-schnell.
+Live: https://huggingface.co/spaces/aeesh1/quilltale
+GitHub: https://github.com/aeesh/quilltale
+Stack: Python, Gemini API, Gradio, RPG, NPC, FLUX.1-schnell, HuggingFace Spaces
+
 ### SciReason-Bench (2026)
 Category: LLM Evaluation · Benchmark Design
 A structured benchmark evaluating 4 LLMs (Gemini, Phi-3, Mistral, Llama) across 5 scientific reasoning categories: factual recall, conceptual explanation, numerical reasoning, cross-domain synthesis, and calibration. 100 questions spanning AI/ML and materials science. Scored by LLM-as-judge. Key finding: model size does not reliably predict performance at this scale.

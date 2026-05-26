@@ -67,25 +67,53 @@ const OPEN_TO = [
 
 const PROJECTS = [
   {
-    id:            "scireason-bench",
-    title:         "SciReason-Bench",
-    subtitle:      "LLM Evaluation · Scientific Reasoning",
-    category:      "Benchmark Design",
+    id:            "quilltale",
+    title:         "Quilltale",
+    subtitle:      "Structured World State · Grounded LLM · Episodic Memory · RPG · AI Agents",
+    category:      "LLM Systems · Agentic AI",
     year:          "2026",
     featured:      true,
     filterTag:     "ai-engineering",
     rowGroup:      null,
     groupSize:     null,
+    liveUrl:       "https://huggingface.co/spaces/aeesh1/quilltale",
+    githubUrl:     "https://github.com/aeesh/quilltale",
+    huggingfaceUrl:null,
+    previewImage:  "assets/quilltale-preview.png",
+    description:   `An AI-powered text adventure where story generation and world facts are
+                    deliberately separated. The language model writes the prose with the formal world
+                    model enforcing the facts. Every location, item, NPC, and player action is
+                    tracked in a structured Python dataclass. The challenge here is in
+                    keeping a game world consistent across an unbounded number of turns.`,
+    highlights: [
+      "Validated state transitions: AI-proposed world changes checked against formal model before reaching the player with invalid moves caught and reflected in narration",
+      "Per-NPC episodic memory with significance scoring where the barkeep remembers a threat from 15 turns ago because memory is retrieved in the current location and injected into the llm's context",
+      "Automated 20-turn evaluation framework: factual consistency 85%, memory utilisation 91.7%, invalid transition rate ~12%",
+      "Failure analysis: plausible invention, narration-state lag, and judge miscalibration on movement turns all documented",
+      "Scene images generated via FLUX.1-schnell on player movement; graceful degradation on rate limit",
+    ],
+    stack: ["Python", "Gemini Api", "Gradio", "FLUX.1-schnell", "HuggingFace Spaces", "LLM-as-Judge"],
+  },
+  {
+    id:            "scireason-bench",
+    title:         "SciReason-Bench",
+    subtitle:      "LLM Evaluation · Scientific Reasoning",
+    category:      "Benchmark Design",
+    year:          "2026",
+    featured:      false,
+    filterTag:     "ai-engineering",
+    rowGroup:      0,
+    groupSize:     3,
     liveUrl:       "https://scireason-bench.streamlit.app",
     githubUrl:     "https://github.com/Aeesh/scireason-bench",
     huggingfaceUrl:null,
     previewImage:  "assets/scireason-preview.png",
     description:   `A structured benchmark evaluating 4 LLMs across 5 scientific reasoning
-  categories — factual recall, conceptual explanation, numerical reasoning,
-  cross-domain synthesis, and calibration. The calibration category tests whether
-  models know what they don't know, a critical property for deployed AI systems.
-  Scored by LLM-as-judge with an explicit rubric; findings go beyond accuracy
-  to reveal where model size fails to predict performance.`,
+                    categories — factual recall, conceptual explanation, numerical reasoning,
+                    cross-domain synthesis, and calibration. The calibration category tests whether
+                    models know what they don't know, a critical property for deployed AI systems.
+                    Scored by LLM-as-judge with an explicit rubric; findings go beyond accuracy
+                    to reveal where model size fails to predict performance.`,
     highlights: [
       "100 questions across AI/ML and materials science; 4 models (Gemini, Phi-3, Mistral, Llama) evaluated end-to-end",
       "Calibration & uncertainty category: tests whether models express appropriate doubt rather than confident wrong answers",
@@ -96,33 +124,6 @@ const PROJECTS = [
     stack: ["Python", "Gemini API", "Ollama", "Streamlit", "LLM-as-Judge", "Pandas", "Matplotlib"],
   },
   {
-    id:            "paper-qa",
-    title:         "Scientific Paper QA System",
-    subtitle:      "RAG · Retrieval Design · Evaluation",
-    category:      "NLP / AI Systems",
-    year:          "2026",
-    featured:      false,
-    filterTag:     "ai-engineering",
-    rowGroup:      0,
-    groupSize:     2,
-    liveUrl:       null, // "https://huggingface.co/spaces/aeesh1/paper-qa-system",
-    githubUrl:     "https://github.com/aeesh/paper-qa-system",
-    huggingfaceUrl:"https://huggingface.co/spaces/aeesh1/paper-qa-system",
-    previewImage:  null,   // e.g. "assets/paper-qa.png"
-    description:   `A retrieval-augmented generation pipeline for querying domain-specific
-research papers. The interesting part isn't the RAG — it's the evaluation
-layer: a 34-question dataset with expert-verified answers, a hybrid scorer
-that checks numbers, acronyms, and phrases independently, and a failure
-analysis that distinguishes retrieval misses from model hallucination.`,
-    highlights: [
-      "Semantic chunking across 5 papers → 156 indexed chunks; BAAI/bge-small embeddings + ChromaDB",
-      "Hybrid evaluation scorer: numbers, acronyms, and comma-separated phrases checked independently",
-      "Failure taxonomy by type — retrieval miss vs. model hallucination — not a single accuracy number",
-      "Deployed Streamlit interface; fully local via Ollama/Llama 3.2 — zero API cost",
-    ],
-    stack: ["Python", "LlamaIndex", "ChromaDB", "Ollama", "HuggingFace", "Streamlit"],
-  },
-  {
     id:            "abstract-classifier",
     title:         "arXiv Abstract Classifier",
     filterTag:     "ai-engineering",
@@ -131,15 +132,15 @@ analysis that distinguishes retrieval misses from model hallucination.`,
     year:          "2026",
     featured:      false,
     rowGroup:      0,
-    groupSize:     2,
+    groupSize:     3,
     liveUrl:       "https://huggingface.co/spaces/aeesh1/arxiv-abstract-classifier",
     githubUrl:     "https://github.com/aeesh/abstract-classifier",
     huggingfaceUrl:"https://huggingface.co/aeesh1/arxiv-abstract-classifier",
     previewImage:  null,
     description:   `Fine-tuned DistilBERT on 28k arXiv abstracts across 11 scientific
-fields, trained on PSC Bridges-2 V100 GPUs via SLURM. Goes beyond accuracy:
-per-class F1, confusion matrix, and token-level explainability via Captum
-integrated gradients to show which words drove each prediction.`,
+                    fields, trained on PSC Bridges-2 V100 GPUs via SLURM. Goes beyond accuracy:
+                    per-class F1, confusion matrix, and token-level explainability via Captum
+                    integrated gradients to show which words drove each prediction.`,
     highlights: [
       "Weighted cross-entropy loss + AdamW with linear warmup; full SLURM job on V100",
       "WandB experiment tracking: loss curves, per-epoch F1, learning rate schedule",
@@ -147,6 +148,33 @@ integrated gradients to show which words drove each prediction.`,
       "Model on HuggingFace Hub; interactive Streamlit app",
     ],
     stack: ["PyTorch", "HuggingFace", "Captum", "WandB", "SLURM/HPC", "Streamlit"],
+  },
+  {
+    id:            "paper-qa",
+    title:         "Scientific Paper QA System",
+    subtitle:      "RAG · Retrieval Design · Evaluation",
+    category:      "NLP / AI Systems",
+    year:          "2026",
+    featured:      false,
+    filterTag:     "ai-engineering",
+    rowGroup:      0,
+    groupSize:     3,
+    liveUrl:       null, // "https://huggingface.co/spaces/aeesh1/paper-qa-system",
+    githubUrl:     "https://github.com/aeesh/paper-qa-system",
+    huggingfaceUrl:"https://huggingface.co/spaces/aeesh1/paper-qa-system",
+    previewImage:  null,   // e.g. "assets/paper-qa.png"
+    description:   `A retrieval-augmented generation pipeline for querying domain-specific
+                    research papers. The interesting part isn't the RAG — it's the evaluation
+                    layer: a 34-question dataset with expert-verified answers, a hybrid scorer
+                    that checks numbers, acronyms, and phrases independently, and a failure
+                    analysis that distinguishes retrieval misses from model hallucination.`,
+    highlights: [
+      "Semantic chunking across 5 papers → 156 indexed chunks; BAAI/bge-small embeddings + ChromaDB",
+      "Hybrid evaluation scorer: numbers, acronyms, and comma-separated phrases checked independently",
+      "Failure taxonomy by type — retrieval miss vs. model hallucination — not a single accuracy number",
+      "Deployed Streamlit interface; fully local via Ollama/Llama 3.2 — zero API cost",
+    ],
+    stack: ["Python", "LlamaIndex", "ChromaDB", "Ollama", "HuggingFace", "Streamlit"],
   },
   {
     id:            "monkeypox",
@@ -361,7 +389,7 @@ const EXPERIENCE = [
 const SKILLS = [
   {
     label: "AI & ML",
-    items: ["PyTorch", "HuggingFace Transformers", "LlamaIndex", "ChromaDB", "Captum", "WandB", "Ollama", "scikit-learn", "TensorFlow"],
+    items: ["PyTorch", "HuggingFace Transformers", "LlamaIndex", "Agentic AI", "Gradio", "ChromaDB", "Captum", "WandB", "Ollama", "scikit-learn", "TensorFlow"],
   },
   {
     label: "Languages & Data",
@@ -373,7 +401,7 @@ const SKILLS = [
   },
   {
     label: "Research Areas",
-    items: ["NLP", "RAG / Retrieval Systems", "LLM Evaluation", "Computer Vision", "ASR / Speech", "Human-AI Interaction", "AI Ethics", "Scientific ML"],
+    items: ["NLP", "RAG / Retrieval Systems", "LLM Evaluation", "Agentic Systems", "World Modelling", "Computer Vision", "ASR / Speech", "Human-AI Interaction", "AI Ethics", "Scientific ML"],
   },
   {
     label: "Web & Blockchain",
