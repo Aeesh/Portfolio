@@ -84,7 +84,7 @@ TA for Introduction to Deep Learning (Spring 2025) and Research Methods in Engin
 
 Software Engineer, Recherché Inc (Cryptonomic) (Mar 2021 – Dec 2025)
 Project Guardian (MAS): led frontend engineering and contributed to smart contract integration and backend for the Monetary Authority of Singapore's institutional DeFi pilot alongside JP Morgan, DBS, and SBI.
-Institutional DiD: built decentralized identity components (frontend, mobile apps, SDKs, smart contracts) for a major investment bank as part of a project that resulted in two granted patents on distributed ledger identity management.
+Institutional DiD: built decentralised identity components (frontend, mobile apps, SDKs, smart contracts) for a major investment bank as part of a project that resulted in two granted patents on distributed ledger identity management.
 Monadic DNA: led frontend, iOS and Android app development; built the Rust library service for cross-platform cryptographic computation; contributed to backend and Nillion MPC integration; built SnipperBot end-to-end for blind genomic inference; deployed with 30+ real participants.
 Persimmon: led end-to-end development of a live iOS app for privacy-focused crypto wallet monitoring with daily balance alerts; shipped to the Apple App Store.
 Full-stack across TezFin, TEZEX, and Galleon wallet on Tezos mainnet.
