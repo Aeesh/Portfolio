@@ -43,6 +43,7 @@ software engineering.`,
   email:     "adamaisha352@gmail.com",
   github:    "https://github.com/aeesh",
   linkedin:  "http://linkedin.com/in/aisha-opaluwa-7287b11b4",
+  resume:   "assets/aisha_opaluwa_resume.pdf",
 };
 
 const STATS = [

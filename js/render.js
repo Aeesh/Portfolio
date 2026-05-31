@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── NAV ──────────────────────────────────────────────────────────
   document.querySelector('.nav-logo').innerHTML = `${BIO.initials}<span>.</span>`;
   document.querySelector('.nav-cta').href = `mailto:${BIO.email}`;
+  document.querySelector('.nav-resume').href = `${BIO.resume}`;
 
   window.addEventListener('scroll', () => {
     document.getElementById('nav').style.padding =
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <a href="#projects" class="btn btn-primary">View Projects</a>
     <a href="${BIO.github}" target="_blank" class="btn btn-ghost">GitHub ↗</a>
     <a href="${BIO.linkedin}" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+    <a href="${BIO.resume}" target="_blank" class="btn btn-ghost">CV / Resume ↗</a>
   `;
 
   // hero stats card
@@ -80,7 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('about-contact').innerHTML = `
     <a href="mailto:${BIO.email}">${BIO.email}</a><br>
     <a href="${BIO.github}" target="_blank">${BIO.github.replace('https://', '')}</a><br>
-    <a href="${BIO.linkedin}" target="_blank">LinkedIn</a>
+    <a href="${BIO.linkedin}" target="_blank">LinkedIn</a><br>
+    <a href="${BIO.resume}" target="_blank">CV / Resume</a>
   `;
 
   // ── PROJECTS ──────────────────────────────────────────────────────
@@ -123,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { type: 'Email',    val: BIO.email,                              href: `mailto:${BIO.email}` },
     { type: 'GitHub',   val: BIO.github.replace('https://', ''),     href: BIO.github },
     { type: 'LinkedIn', val: 'Aisha Opaluwa',                        href: BIO.linkedin },
+    { type: 'Resume',   val: 'CV / Resume',                          href: BIO.resume },
   ].map(l => `
     <a href="${l.href}" target="_blank" class="contact-link fade-in">
       <div class="cl-meta">
