@@ -264,20 +264,50 @@ unimodal system rather than just assuming it would.`,
     year:          "2024–2025",
     featured:      false,
     rowGroup:      2,
-    groupSize:     2,
+    groupSize:     3,
     liveUrl:       "https://monadicdna.com/",
     githubUrl:     "https://github.com/Monadic-DNA/MonadicDNA",
     huggingfaceUrl:null,
     previewImage:  null,
-    description:   `Contributed to a genomics platform enabling AI inference on encrypted
-health data using homomorphic encryption, multiparty computation, and
-blockchain-based permissioning. Production software with real cryptographic
-privacy guarantees — not a proof-of-concept.`,
+    description:   `Production genomics platform enabling blind AI inference on encrypted
+                    23andMe data. Led frontend, iOS and Android app development; built
+                    the Rust library service enabling cross-platform cryptographic
+                    computation compiled for both iOS and Android. Contributed to backend
+                    and Nillion MPC integration. Built SnipperBot end-to-end — SNP ingestion,
+                    encrypted MPC computation, on-chain attestations — deployed with 30+
+                    real participants using live genomic data.`,
     highlights: [
-      "Nillion MPC permissioning and WASM-compiled Zama FHE libraries integrated on iOS",
-      "Attestation flows, file upload pipeline, provider filtering — shipped to production",
+      "Built WASM-compiled Zama FHE service for cross-platform cryptographic computation — compiled and validated for both iOS and Android",
+      "Led frontend and both mobile apps (iOS + Android); contributed to backend and Nillion MPC integration",
+      "Built SnipperBot end-to-end: DNA Passport ingestion → encrypted trait analysis on Nillion → on-chain Sign Protocol attestations",
+      "Overall winner, Scaling Ethereum 2024 hackathon; moved into production with Nillion partnership",
     ],
-    stack: ["TypeScript", "React", "FHE/Zama", "Nillion", "WASM", "Blockchain"],
+    stack: ["TypeScript", "React", "Swift", "Kotlin", "Rust", "Nillion", "FHE/Zama", "Sign Protocol", "WASM"],
+  },
+  {
+    id:            "project-guardian",
+    title:         "Project Guardian",
+    filterTag:     "engineering",
+    subtitle:      "Institutional DeFi · MAS · JP Morgan · DBS · SBI",
+    category:      "Institutional Finance · Blockchain",
+    year:          "2022–2023",
+    featured:      false,
+    rowGroup:      2,
+    groupSize:     3,
+    liveUrl:       "https://www.mas.gov.sg/news/media-releases/2022/first-industry-pilot-for-digital-asset-and-decentralised-finance-goes-live",
+    githubUrl:     null,
+    huggingfaceUrl:null,
+    previewImage:  null,
+    description: `Contributed to the Monetary Authority of Singapore's institutional DeFi
+                  pilot — a tokenized real-world asset lending platform with JP Morgan, DBS,
+                  and SBI as participants. Led frontend engineering and contributed to smart
+                  contract integration and backend. One of the first live institutional DeFi
+                  deployments globally.`,
+    highlights: [
+      "Frontend lead and smart contract integration across the full lending platform",
+      "Worked within a regulated institutional finance context with JPMorgan, DBS, and SBI",
+    ],
+    stack: ["TypeScript", "React", "Smart Contracts", "DeFi", "Tezos"],
   },
   {
     id:            "tezfin",
@@ -288,21 +318,46 @@ privacy guarantees — not a proof-of-concept.`,
     year:          "2022–2024",
     featured:      false,
     rowGroup:      2,
-    groupSize:     2,
+    groupSize:     3,
     liveUrl:       "https://app.tezos.finance/",
     githubUrl:     "https://github.com/StableTechnologies/TezFin",
     huggingfaceUrl:null,
     previewImage:  null,
     description:   `Full-stack engineering across TezFin (decentralised lending protocol)
-and TEZEX exchange on Tezos —  shipped to production apps serving
-real mainnet users. Work spanned frontend, smart contract integration,
-blockchain operations, and wallet SDK integration end-to-end.`,
+                    and TEZEX exchange on Tezos —  shipped to production apps serving
+                    real mainnet users. Work spanned frontend, smart contract integration,
+                    blockchain operations, and wallet SDK integration end-to-end.`,
     highlights: [
       "Borrowing flows, collateral, APY display, wallet integration (Beacon SDK), mobile responsiveness",
       "Smart contract interaction: delegation, operations, voting scripts",
       "Shipped alongside TezFin mainnet launch",
     ],
     stack: ["TypeScript", "React", "Tezos", "Beacon SDK", "GraphQL", "Smart Contracts"],
+  },
+  {
+    id:            "persimmon",
+    title:         "Persimmon",
+    filterTag:     "engineering",
+    subtitle:      "iOS App · Crypto Wallet Monitoring · Privacy",
+    category:      "Mobile Engineering",
+    year:          "2023",
+    featured:      false,
+    rowGroup:      3,
+    groupSize:     3,
+    liveUrl:       "https://apps.apple.com/us/app/persimmon-alerts/id6450377537",
+    githubUrl:     null,
+    huggingfaceUrl:null,
+    previewImage:  null,
+    description:   `A live iOS app for privacy-focused crypto self-hosters. Tracks digital
+                    wallet activity across multiple addresses and sends daily alerts on
+                    balance changes — so theft, missed staking income, or DeFi activity
+                    doesn't go unnoticed. Led end-to-end: design, engineering, and App Store
+                    deployment.`,
+    highlights: [
+      "Live on the Apple App Store — production software with real users",
+      "Built for self-hosters who manage their own crypto keys and need passive monitoring without custodial risk",
+    ],
+    stack: ["SwiftUI", "iOS", "Crypto", "REST APIs"],
   },
   {
     id:            "metasurf",
@@ -371,12 +426,14 @@ const EXPERIENCE = [
   },
   {
     period: "Mar 2021 – Dec 2025",
-    org:    "Recherché Inc · Remote",
+    org:    "Recherché Inc ·(formerly Cryptonomic)· Remote",
     role:   "Software Engineer",
     bullets: [
-      "Built privacy-preserving AI infrastructure combining FHE, MPC, and blockchain for secure genomic data sharing (Monadic DNA)",
-      "Full-stack engineering across TezFin, TEZEX, and Galleon wallet —  shipped to mainnet production apps including smart contract integration and blockchain operations",
-      "Cross-functional across AI, privacy engineering, smart contracts, and product design",
+      "Project Guardian (MAS) — led frontend engineering and contributed to smart contract integration and backend for the Monetary Authority of Singapore's institutional DeFi pilot alongside JP Morgan, DBS, and SBI; tokenized real-world asset lending platform",
+      "Institutional DiD — built decentralized identity components (frontend, mobile app, SDKs, smart contracts) for a major investment bank; work resulted in two granted patents on distributed ledger identity management",
+      "Monadic DNA — led frontend, iOS and Android app development; built the Rust library service enabling cross-platform cryptographic computation (compiled for both iOS and Android); contributed to backend and Nillion MPC integration. Built SnipperBot end-to-end: parses 23andMe SNP data, stores secrets on Nillion's MPC network, runs blind trait analysis without raw data ever being decrypted, and issues on-chain VerifiedTrait attestations via Sign Protocol. Overall winner, Scaling Ethereum 2024 hackathon. Deployed with 30+ real participants at ETHDenver using live genomic data.",
+      "Persimmon — led end-to-end development of a live iOS app for privacy-focused crypto wallet monitoring with daily balance alerts; shipped to the Apple App Store.",
+      "Full-stack across TezFin DeFi protocol, TEZEX exchange, and Galleon wallet on Tezos mainnet",
     ],
   },
   {
@@ -397,7 +454,7 @@ const SKILLS = [
   },
   {
     label: "Languages & Data",
-    items: ["Python", "C++", "TypeScript", "JavaScript", "Pandas", "NumPy", "Matplotlib"],
+    items: ["Python", "Rust", "C++", "TypeScript", "JavaScript", "Pandas", "NumPy", "Matplotlib"],
   },
   {
     label: "Infrastructure",

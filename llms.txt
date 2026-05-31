@@ -52,17 +52,25 @@ Stack: PyTorch, CNN, LSTM, MFCC
 Category: Human-AI Interaction · EdTech
 Research study with Qatar Computing Research Institute analysing how access conditions affect student engagement with CipherBot, an AI-powered educational platform. Investigated modality effects (text vs audio), mobile access, and translation features on dialogue complexity.
 
-### Monadic DNA (2024)
+### Monadic DNA (2024–2025)
 Category: Privacy-Preserving AI · Blockchain
-Contributed to a genomics platform enabling AI inference on encrypted health data using FHE, MPC, and blockchain permissioning. Production software.
+Led frontend, iOS and Android app development; built the Rust library service enabling cross-platform cryptographic computation (compiled for both iOS and Android); contributed to backend and Nillion MPC integration. Built SnipperBot end-to-end: parses 23andMe SNP data, stores secrets on Nillion's MPC network, runs blind trait analysis without raw data ever being decrypted, and issues on-chain VerifiedTrait attestations via Sign Protocol. Overall winner, Scaling Ethereum 2024 hackathon. Deployed with 30+ real participants at ETHDenver using live genomic data.
+Live: https://monadicdna.com
 GitHub: https://github.com/Monadic-DNA/MonadicDNA
-Stack: TypeScript, React, FHE/Zama, Nillion, WASM
+Stack: TypeScript, React, Swift, Kotlin, Rust, Nillion, FHE/Zama, Sign Protocol, WASM
 
 ### TezFin / TEZEX (2022–2024)
 Category: DeFi · Full-Stack Engineering
 Full-stack engineering across TezFin lending protocol and TEZEX exchange on Tezos. 200+ commits to mainnet production apps including smart contract integration.
 GitHub: https://github.com/StableTechnologies/TezFin
 Stack: TypeScript, React, Tezos, Beacon SDK, GraphQL
+
+### Persimmon (2023)
+Category: Mobile Engineering · iOS
+Led end-to-end development of a live iOS app for privacy-focused crypto wallet monitoring. Tracks digital wallet activity and sends daily balance change alerts for users who self-host their crypto keys. Shipped to production on the Apple App Store.
+Live: https://apps.apple.com/us/app/persimmon-alerts/id6450377537
+Product page: https://persimmonapp.com
+Stack: SwiftUI, iOS, REST APIs
 
 ---
 
@@ -74,8 +82,12 @@ DFT simulations on wolframite oxide materials using Quantum ESPRESSO on HPC clus
 Teaching Assistant, Carnegie Mellon University (Aug 2024 – Dec 2025)
 TA for Introduction to Deep Learning (Spring 2025) and Research Methods in Engineering (Fall 2025).
 
-Software Engineer, Recherché Inc (Mar 2021 – Dec 2025)
-Built privacy-preserving AI infrastructure (FHE, MPC, blockchain). Full-stack engineering across TezFin, TEZEX, and Galleon wallet. 200+ commits to mainnet production apps.
+Software Engineer, Recherché Inc (Cryptonomic) (Mar 2021 – Dec 2025)
+Project Guardian (MAS): led frontend engineering and contributed to smart contract integration and backend for the Monetary Authority of Singapore's institutional DeFi pilot alongside JP Morgan, DBS, and SBI.
+Institutional DiD: built decentralized identity components (frontend, mobile apps, SDKs, smart contracts) for a major investment bank as part of a project that resulted in two granted patents on distributed ledger identity management.
+Monadic DNA: led frontend, iOS and Android app development; built the Rust library service for cross-platform cryptographic computation; contributed to backend and Nillion MPC integration; built SnipperBot end-to-end for blind genomic inference; deployed with 30+ real participants.
+Persimmon: led end-to-end development of a live iOS app for privacy-focused crypto wallet monitoring with daily balance alerts; shipped to the Apple App Store.
+Full-stack across TezFin, TEZEX, and Galleon wallet on Tezos mainnet.
 
 Data Analyst, Innovate for Africa (Jan 2021 – Feb 2021)
 Predictive modelling for urban housing analytics.
@@ -85,7 +97,7 @@ Predictive modelling for urban housing analytics.
 ## Skills
 
 AI & ML: PyTorch, HuggingFace Transformers, LlamaIndex, ChromaDB, Captum, WandB, Ollama, scikit-learn, TensorFlow
-Languages: Python, C++, TypeScript, JavaScript
+Languages: Python, Rust, C++, TypeScript, JavaScript
 Infrastructure: HPC/SLURM, PSC Bridges-2, Quantum ESPRESSO, Docker, Git, Streamlit, Flask, REST APIs
 Research: NLP, RAG, LLM Evaluation, Computer Vision, ASR/Speech, Human-AI Interaction, AI Ethics, Scientific ML
 Web: React, Redux, GraphQL, Web3.js, Ethers, Smart Contracts
