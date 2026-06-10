@@ -36,7 +36,7 @@ software engineering.`,
     `I'm an AI researcher and engineer at CMU, currently working as a Research Assistant. My work sits at the intersection of <strong>NLP systems</strong>, <strong>model evaluation</strong>, and <strong>computational materials science</strong>, with a consistent thread of caring whether things actually work and being able to demonstrate why. That means evaluation design, interpretability, and building frameworks that surface failure modes before deployment.`,
     `I TA'd Introduction to Deep Learning at CMU, which sharpened a conviction that <strong>explaining something clearly is how you know you understand it</strong>. That shows up in how I build: not just accuracy, but where models break, and why.`,
     `With five years experience building production software — privacy-preserving AI infrastructure (FHE, MPC, blockchain), full-stack DeFi protocols on Tezos with smart contract integration, and genomics platforms, I think carefully about system design, tradeoffs, and how decisions hold up in practice.`,
-    `Targeting <strong>ML/AI engineering and research roles</strong>. Also genuinely interested in human-AI interaction and AI ethics research — my computational materials science thread is a foundation for scientific ML/AI.`,
+    `Targeting <strong>ML/AI engineering and research roles</strong>. Also genuinely interested in human-AI interaction and AI Safety research — my computational materials science thread is a foundation for scientific ML/AI.`,
   ],
   currently: `<strong>Research Assistant</strong>, Carnegie Mellon University<br>DFT simulations on wolframite materials; manuscript in preparation.`,
   education: `<strong>MSc Engineering & AI</strong> — CMU, 2024–2025<br>TA: Intro to Deep Learning · Research Methods in Engineering`,
@@ -58,7 +58,7 @@ const OPEN_TO = [
   "AI Research",
   "Scientific ML",
   "Human-AI Interaction",
-  "AI Ethics Research",
+  "AI Safety Research",
 ];
 
 // ── PROJECTS ─────────────────────────────────────────────────────────────────
@@ -462,7 +462,7 @@ const SKILLS = [
   },
   {
     label: "Research Areas",
-    items: ["NLP", "RAG / Retrieval Systems", "LLM Evaluation", "Agentic Systems", "World Modelling", "Computer Vision", "ASR / Speech", "Human-AI Interaction", "AI Ethics", "Scientific ML"],
+    items: ["NLP", "RAG / Retrieval Systems", "LLM Evaluation", "Agentic Systems", "World Modelling", "Computer Vision", "ASR / Speech", "Human-AI Interaction", "AI Safety", "Scientific ML"],
   },
   {
     label: "Web & Blockchain",

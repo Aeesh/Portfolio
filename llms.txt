@@ -2,7 +2,7 @@
 
 MSc Engineering & AI, Carnegie Mellon University (2024–2025).
 Currently Research Assistant at CMU (DFT simulations on wolframite materials, manuscript in preparation).
-Open to: ML Engineering, AI Engineering, AI Research, Scientific ML, Human-AI Interaction, AI Ethics Research.
+Open to: ML Engineering, AI Engineering, AI Research, Scientific ML, Human-AI Interaction, AI Safety Research.
 
 Contact: aopaluwa@alumni.cmu.edu
 GitHub: https://github.com/aeesh
@@ -99,6 +99,6 @@ Predictive modelling for urban housing analytics.
 AI & ML: PyTorch, HuggingFace Transformers, LlamaIndex, ChromaDB, Captum, WandB, Ollama, scikit-learn, TensorFlow
 Languages: Python, Rust, C++, TypeScript, JavaScript
 Infrastructure: HPC/SLURM, PSC Bridges-2, Quantum ESPRESSO, Docker, Git, Streamlit, Flask, REST APIs
-Research: NLP, RAG, LLM Evaluation, Computer Vision, ASR/Speech, Human-AI Interaction, AI Ethics, Scientific ML
+Research: NLP, RAG, LLM Evaluation, Computer Vision, ASR/Speech, Human-AI Interaction, AI Safety, Scientific ML
 Web: React, Redux, GraphQL, Web3.js, Ethers, Smart Contracts
 Computational Science: DFT Simulation, Materials Science, Privacy-Preserving ML, FHE/MPC
